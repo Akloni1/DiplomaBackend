@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+   .by-home {
+     position: fixed;
+     top: 300px;
+     left: 30%;
+     right: 30%;
+     padding: 20px;
+     border: 1px solid #7abaff;  
+     text-color: #7abaff;
+   }
+    .title-on-home-page{
+        margin: auto; 
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+     
+      }
+      .colortext {
+           color: #7abaff; 
+         }
+</style>
+<div class="text-center">
+    <h1 class="display-4 title-on-home-page">Привет у нас самые честные соревнования</h1>
+     <a class="nav-link text-dark by-home" asp-area="" asp-controller="Home" asp-action="Competitions"><span class="colortext">Создать соревнования</span></a>
+   
+</div>

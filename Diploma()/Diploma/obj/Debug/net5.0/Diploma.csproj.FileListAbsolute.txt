@@ -1,0 +1,483 @@
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\appsettings.json
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.exe
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.deps.json
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.json
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.dev.json
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.csproj.AssemblyReference.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfoInputs.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfo.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.Manifest.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.xml
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\scopedcss\bundle\Diploma.styles.css
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.csproj.CopyComplete
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.genruntimeconfig.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.Views.dll
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\bin\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.input.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.output.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorCoreGenerate.cache
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Details.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Index.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Create.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Edit.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Delete.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Home\Competitions.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Create.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Delete.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Details.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Edit.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Index.cshtml.g.cs
+C:\Users\Михаил\RiderProjects\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\appsettings.json
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.exe
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.deps.json
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.json
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.dev.json
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.Views.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfoInputs.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfo.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.Manifest.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.xml
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\scopedcss\bundle\Diploma.styles.css
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.input.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.output.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorCoreGenerate.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Home\Competitions.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.csproj.CopyComplete
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.genruntimeconfig.cache
+C:\Users\Михаил\Desktop\Diploma\Diploma\obj\Debug\net5.0\Diploma.csproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\appsettings.json
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.exe
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.deps.json
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.json
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.dev.json
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.Views.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfoInputs.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfo.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.Manifest.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.xml
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\scopedcss\bundle\Diploma.styles.css
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.input.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.output.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorCoreGenerate.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Competitions.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.CopyComplete
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.genruntimeconfig.cache
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Михаил\Desktop\Diploma(copy)\Diploma\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\appsettings.json
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.exe
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.deps.json
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.json
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.dev.json
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.Views.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfoInputs.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfo.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.Manifest.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.xml
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\scopedcss\bundle\Diploma.styles.css
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.input.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.output.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorCoreGenerate.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Competitions.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.CopyComplete
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Boxing-Compititions-Asp-git\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.genruntimeconfig.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\appsettings.json
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.exe
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.deps.json
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.json
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.dev.json
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.Views.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfoInputs.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfo.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.Manifest.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.xml
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\scopedcss\bundle\Diploma.styles.css
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.input.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.output.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorCoreGenerate.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Competitions.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cache
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cs
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.csproj.CopyComplete
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\ASP-Boxing-Compititions\Diploma(copy)\Diploma\obj\Debug\net5.0\Diploma.genruntimeconfig.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\appsettings.json
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.exe
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.deps.json
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.json
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.runtimeconfig.dev.json
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.Views.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.csproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfoInputs.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.AssemblyInfo.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.RazorAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\staticwebassets\Diploma.StaticWebAssets.Manifest.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\scopedcss\bundle\Diploma.styles.css
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.input.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.TagHelpers.output.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.RazorCoreGenerate.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Boxers\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Create.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Delete.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Edit.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\BoxingClubs\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Home\Competitions.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.RazorTargetAssemblyInfo.cs
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.Views.pdb
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.csproj.CopyComplete
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.pdb
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\Diploma.genruntimeconfig.cache
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\bin\Debug\net5.0\Diploma.StaticWebAssets.xml
+C:\Users\Михаил\Desktop\Новая папка (3)\Diploma()\Diploma\obj\Debug\net5.0\refint\Diploma.dll

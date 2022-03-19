@@ -1,0 +1,48 @@
+@using System.Linq
+@model System.Collections.Generic.List<Diploma.ViewModels.BoxingClubs.BoxingClubsViewModel>
+
+@{
+    ViewData["Title"] = "Выберите клубы, которые будут участвовать в соревнованиях";
+}
+
+<h2>@ViewData["Title"]</h2>
+<style>
+    .del{
+    color: maroon;
+    display:none;
+    }
+</style>
+
+
+<table class="table">
+    <thead>
+    <tr>
+
+        <th>
+            <label asp-for="@Model.First().ClubName"></label>
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+   
+
+    <tbody>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.ClubName
+            </td>
+
+
+            <td>
+                <a asp-action="Details" asp-route-id="@item.BoxingClubId">Подробная информация</a> |
+                <button type="button" id="add @item.BoxingClubId" onclick="add(@item.BoxingClubId)">Добавить клуб в список клубов участвующих в соревнованиях</button>
+                <button class="del" type="button" id="delete @item.BoxingClubId" onclick="del(@item.BoxingClubId)">удалить</button>
+              
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,53 @@
+﻿@using System.Linq
+@model System.Collections.Generic.List<Diploma.ViewModels.Boxers.BoxerViewModel>
+
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Спортсмены</h1>
+
+<td>
+    <a asp-action="Create">Create</a>
+</td>
+<table class="table">
+    <thead>
+    <tr>
+
+        <th>
+            <label asp-for="@Model.First().FirstName"></label>
+        </th>
+        <th>
+            <label asp-for="@Model.First().LastName"></label>
+        </th>
+        <th>
+            <label asp-for="@Model.First().MiddleName"></label>
+        </th>
+      
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.MiddleName
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.BoxerId">Details</a> |
+                <a asp-action="Edit" asp-route-id="@item.BoxerId">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.BoxerId">Delete</a> 
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

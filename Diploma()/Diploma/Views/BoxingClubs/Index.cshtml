@@ -1,0 +1,42 @@
+﻿@using System.Linq
+@model System.Collections.Generic.List<Diploma.ViewModels.BoxingClubs.BoxingClubsViewModel>
+
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Спортивные клубы</h1>
+
+<td>
+    <a asp-action="Create">Create</a>
+</td>
+<table class="table">
+    <thead>
+    <tr>
+
+        <th>
+            <label asp-for="@Model.First().ClubName"></label>
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.ClubName
+            </td>
+            
+           
+            <td>
+                <a asp-action="Details" asp-route-id="@item.BoxingClubId">Details</a> |
+                <a asp-action="Edit" asp-route-id="@item.BoxingClubId">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.BoxingClubId">Delete</a> 
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+﻿@model Diploma.ViewModels.BoxingClubs.BoxingClubsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Подробно о спортивном клубе</h1>
+
+
+<div>
+    <h4>Спортивный клуб</h4>
+    <hr/>
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            <label asp-for="ClubName"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ClubName
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="ClubAddress"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ClubAddress
+        </dd>
+    </dl>
+</div>
+<div>
+
+    <a asp-action="Competitions">Back to List</a>
+</div>

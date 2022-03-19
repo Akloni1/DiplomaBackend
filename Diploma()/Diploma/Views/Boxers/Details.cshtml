@@ -1,0 +1,79 @@
+﻿@model Diploma.ViewModels.Boxers.BoxerViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Details</h1>
+
+
+<div>
+    <h4>Boxer</h4>
+    <hr/>
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            <label asp-for="FirstName"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FirstName
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="LastName"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.LastName
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="MiddleName"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.MiddleName
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="DateOfBirth"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.DateOfBirth
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="TrainingExperience"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.TrainingExperience
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="NumberOfFightsHeld"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.NumberOfFightsHeld
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="NumberOfWins"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.NumberOfWins
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="Discharge"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Discharge
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="CoachId"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.CoachId
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="BoxingClubId"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.BoxingClubId
+        </dd>
+    </dl>
+</div>
+<div>
+
+    <a asp-action="Index">Back to List</a>
+</div>

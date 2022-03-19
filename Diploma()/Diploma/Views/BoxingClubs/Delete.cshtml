@@ -1,0 +1,32 @@
+﻿@model Diploma.ViewModels.BoxingClubs.DeleteBoxingClubsViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Удалить</h1>
+
+<h3>Вы действительно хотите удалить этот боксерский клуб?</h3>
+
+<h4>Боксерский клуб</h4>
+<div>
+    <hr/>
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label asp-for="ClubName"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ClubName
+        </dd>
+        <dt class="col-sm-2">
+            <label asp-for="ClubAddress"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ClubAddress
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger"/> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
