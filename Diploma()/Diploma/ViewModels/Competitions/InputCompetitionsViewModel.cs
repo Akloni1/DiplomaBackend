@@ -9,5 +9,6 @@ namespace Diploma.ViewModels.Competitions
     {
         public string CompetitionsName { get; set; }
         public string CompetitionsAddress { get; set; }
+        public DateTime StartTime { get; set; }
     }
 }

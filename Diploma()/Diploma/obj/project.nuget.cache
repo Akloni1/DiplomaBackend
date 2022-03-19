@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uMTuZK/ekZyKRcQZs864r95uUVb3RHpI0NqBqs+c3eQcoPYBWQ3JKsmG53WOJyfuz7+l/8amU/YPfa9sdwXjaQ==",
+  "dgSpecHash": "BQmppAXDWsopck9GSu5XzE+5wxkO52ols8b7oW/EYx9Sjpv6CsJnKqwXZyk6izreivKpsYS+DI/otvGt3FysCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Михаил\\Desktop\\Новая папка (3)\\Diploma()\\Diploma\\Diploma.csproj",
+  "projectFilePath": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\Diploma.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Михаил\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Михаил\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

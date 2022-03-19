@@ -6029,11 +6029,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Михаил\\Desktop\\Новая папка (3)\\Diploma()\\Diploma\\Diploma.csproj",
+      "projectUniqueName": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\Diploma.csproj",
       "projectName": "Diploma",
-      "projectPath": "C:\\Users\\Михаил\\Desktop\\Новая папка (3)\\Diploma()\\Diploma\\Diploma.csproj",
+      "projectPath": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\Diploma.csproj",
       "packagesPath": "C:\\Users\\Михаил\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Михаил\\Desktop\\Новая папка (3)\\Diploma()\\Diploma\\obj\\",
+      "outputPath": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Михаил\\AppData\\Roaming\\NuGet\\NuGet.Config",
