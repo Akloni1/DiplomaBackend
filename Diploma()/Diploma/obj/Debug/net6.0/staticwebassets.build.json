@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CW91ymt9A8hDYZJ3AqN85U4JcLtgQaxz1sbp8QrrUdM=",
+  "Hash": "bup4+89ELGyLMsFhd/c59h+w0ouVQoZ4ju4RjZDfuVo=",
   "Source": "Diploma",
   "BasePath": "_content/Diploma",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Diploma",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\",
+      "BasePath": "_content/Diploma",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
       "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Diploma",
       "SourceType": "Discovered",
@@ -117,23 +134,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
-    },
-    {
-      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "Diploma",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\",
-      "BasePath": "_content/Diploma",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
       "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
@@ -187,12 +187,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Diploma",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\",
       "BasePath": "_content/Diploma",
-      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Diploma",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\",
       "BasePath": "_content/Diploma",
-      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,7 +218,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
       "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
@@ -272,12 +272,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Diploma",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\",
       "BasePath": "_content/Diploma",
-      "RelativePath": "lib/jquery/dist/jquery.js",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -286,15 +286,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Diploma",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\wwwroot\\",
       "BasePath": "_content/Diploma",
-      "RelativePath": "lib/jquery/LICENSE.txt",
+      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -303,7 +303,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     }
   ]
 }
