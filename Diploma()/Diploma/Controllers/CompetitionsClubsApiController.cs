@@ -27,7 +27,7 @@ namespace Diploma.Controllers
         }
 
 
-        [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
+        [HttpGet("{id}")]  // GET: Выводит клубы участвующие в соревнованих 
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxingClubsViewModel>))]
         [ProducesResponseType(404)]
         public ActionResult<IEnumerable<BoxingClubsViewModel>> GetClubsByIdCompetition(int id)
@@ -50,7 +50,7 @@ namespace Diploma.Controllers
                     clubsConcat = (clubsConcat ?? Enumerable.Empty<BoxingClubsViewModel>()).Concat(clubs[i + 1] ?? Enumerable.Empty<BoxingClubsViewModel>());
                 }
             }
-            else return NotFound();
+            else NotFound();
 
             return Ok(clubsConcat);
         }
@@ -59,7 +59,7 @@ namespace Diploma.Controllers
 
 
 
-        [HttpPost] // POST: /api/competitions/clubs
+        [HttpPost] // POST: /api/competitions/clubs / добавление клуба в соревнования
         public ActionResult<InputCompetitionsClubsViewModel> PostClub(InputCompetitionsClubsViewModel inputModel)
         {
 
@@ -71,7 +71,7 @@ namespace Diploma.Controllers
 
         
 
-        [HttpDelete("{id}")] // DELETE: /api/competitions/clubs/1
+        [HttpDelete("{id}")] // DELETE: /api/competitions/clubs/1/ удаляет все клубы привязанные к соревнованию 
        
         public ActionResult<IEnumerable<DeleteCompetitionsClubsViewModel>> DeleteCompetitionClubs(int id)
         {
@@ -87,7 +87,15 @@ namespace Diploma.Controllers
 
 
 
-
+        [HttpDelete] // DELETE: /api/competitions/boxer / Удаляет конкретный БК из соревнования 
+        public ActionResult<DeleteCompetitionsClubsViewModel> DeleteBoxingClubParticipating([FromQuery] DeleteCompetitionsClubsViewModel viewModel)
+        {
+            var club = _context.CompetitionsClubs.Where(a => a.CompetitionsId == viewModel.CompetitionsId && a.BoxingClubId == viewModel.BoxingClubId);
+            if (club == null) return NotFound();
+            _context.CompetitionsClubs.RemoveRange(club);
+            _context.SaveChanges();
+            return Ok(club);
+        }
 
     }
 }

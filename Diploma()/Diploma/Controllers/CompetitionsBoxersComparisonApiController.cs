@@ -25,7 +25,7 @@ namespace Diploma.Controllers
         [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxerViewModel>))]
         [ProducesResponseType(404)]
-        public ActionResult<IEnumerable<BoxersViewModel>> GetBoxersByIdCompetition(int id)
+        public ActionResult<IEnumerable<BoxersViewModel>> GetBoxersComparison(int id)
         {
             var competitionsBoxers = _mapper.Map<IEnumerable<CompetitionsBoxers>, IEnumerable<CompetitionsBoxersViewModel>>(_context.CompetitionsBoxers.Where(a => a.CompetitionsId == id).ToList());
             var idBoxers = competitionsBoxers.Select(h => h.BoxerId).ToList();
@@ -138,10 +138,9 @@ namespace Diploma.Controllers
             var final = new
             {
                 res,
-                notPaired = new
-                {
+               
                     notPaired
-                }
+                
             };
 
             return Ok(final);
