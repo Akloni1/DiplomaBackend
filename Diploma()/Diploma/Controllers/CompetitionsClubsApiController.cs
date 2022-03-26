@@ -50,7 +50,12 @@ namespace Diploma.Controllers
                     clubsConcat = (clubsConcat ?? Enumerable.Empty<BoxingClubsViewModel>()).Concat(clubs[i + 1] ?? Enumerable.Empty<BoxingClubsViewModel>());
                 }
             }
-            else NotFound();
+            //    else NotFound();
+            else
+            {
+                List<BoxingClubsViewModel> boxerViewModels = new List<BoxingClubsViewModel>();
+                return boxerViewModels;
+            }
 
             return Ok(clubsConcat);
         }

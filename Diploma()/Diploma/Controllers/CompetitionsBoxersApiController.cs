@@ -48,7 +48,12 @@ namespace Diploma.Controllers
                     boxersConcat = (boxersConcat ?? Enumerable.Empty<BoxerViewModel>()).Concat(boxers[i + 1] ?? Enumerable.Empty<BoxerViewModel>());
                 }
             }
-            else return NotFound();
+            //  else return NotFound();
+            else
+            {
+                List<BoxerViewModel> boxerViewModels = new List<BoxerViewModel>();
+                return boxerViewModels;
+            }
 
             return Ok(boxersConcat);
         }

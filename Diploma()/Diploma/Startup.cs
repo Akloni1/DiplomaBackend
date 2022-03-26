@@ -7,6 +7,7 @@ using Diploma.Repository;
 using Diploma.Repository.BoxingClubsRepository;
 using Diploma.Repository.CoachesRepository;
 using Diploma.Services;
+using Diploma.Services.BoxersComparisonServices;
 using Diploma.Services.BoxingClubsServices;
 using Diploma.Services.CoachesServices;
 using Microsoft.AspNetCore.Builder;
@@ -51,7 +52,9 @@ namespace Diploma
             services.AddScoped<ICoachesServices, CoachesServices>();
             services.AddScoped<ICoachesRepository, CoachesRepository>();
 
-           
+            services.AddScoped<IBoxersComparisonServices, BoxersComparisonServices>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
