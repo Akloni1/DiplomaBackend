@@ -8,7 +8,7 @@ namespace Diploma.Services.CoachesServices
         CoachViewModel GetCoach(int id);
         IEnumerable<CoachViewModel> GetAllCoaches();
         EditCoachViewModel UpdateCoaches(int id, EditCoachViewModel coachModel);
-        InputCoachViewModel AddCoach(InputCoachViewModel coachModel);
+        CoachViewModel AddCoach(InputCoachViewModel coachModel);
         DeleteCoachViewModel DeleteCoach(int id);
     }
 }

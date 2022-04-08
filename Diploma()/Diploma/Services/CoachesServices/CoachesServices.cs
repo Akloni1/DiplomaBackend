@@ -17,10 +17,10 @@ namespace Diploma.Services.CoachesServices
             _coachesRepository = coachesRepository;
         }
 
-        public InputCoachViewModel AddCoach(InputCoachViewModel coachModel)
+        public CoachViewModel AddCoach(InputCoachViewModel coachModel)
         {
             var coach = _coachesRepository.AddCoach(_mapper.Map<Coaches>(coachModel));
-            return _mapper.Map<InputCoachViewModel>(coach);
+            return _mapper.Map<CoachViewModel>(coach);
         }
 
         public DeleteCoachViewModel DeleteCoach(int id)

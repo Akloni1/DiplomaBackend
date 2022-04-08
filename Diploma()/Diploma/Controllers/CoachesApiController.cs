@@ -4,6 +4,7 @@ using AutoMapper;
 using Diploma.Services.CoachesServices;
 using Diploma.ViewModels.BoxingClubs;
 using Diploma.ViewModels.Coaches;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,6 +22,7 @@ namespace Diploma.Controllers
             _coachesServices = coachesServices;
         }
 
+        [Authorize]
         [HttpGet] // GET: /api/boxers
         [ProducesResponseType(200, Type = typeof(IEnumerable<CoachViewModel>))]  
         [ProducesResponseType(404)]
@@ -29,9 +31,9 @@ namespace Diploma.Controllers
             var coaches = _coachesServices.GetAllCoaches();
             return Ok(coaches);
         }
-        
-        
-        
+
+
+        [Authorize]
         [HttpGet("{id}")] // GET: /api/boxers/5
         [ProducesResponseType(200, Type = typeof(CoachViewModel))]  
         [ProducesResponseType(404)]
@@ -41,14 +43,16 @@ namespace Diploma.Controllers
             if (coach == null) return NotFound();
             return Ok(coach);
         }
-        
+
+        [Authorize(Roles = "admin")]
         [HttpPost] // POST: api/boxers
         public ActionResult<InputCoachViewModel> PostCoaches(InputCoachViewModel inputModel)
         {
             var coach = _coachesServices.AddCoach(inputModel);
             return Ok(coach);
         }
-        
+
+        [Authorize(Roles = "admin")]
         [HttpPut("{id}")] // PUT: api/boxers/5
         public IActionResult UpdateCoach(int id, EditCoachViewModel editModel)
         {
@@ -58,7 +62,8 @@ namespace Diploma.Controllers
             return Ok(coach);
          
         }
-        
+
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")] // DELETE: api/boxingClubs/5
         public ActionResult<DeleteCoachViewModel> DeleteCoach(int id)
         {

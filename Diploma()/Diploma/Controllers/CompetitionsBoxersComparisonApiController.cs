@@ -3,6 +3,7 @@ using AutoMapper;
 using Diploma.Services.BoxersComparisonServices;
 using Diploma.ViewModels.Boxers;
 using Diploma.ViewModels.CompetitionsBoxers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -25,6 +26,10 @@ namespace Diploma.Controllers
         _mapper = mapper;
         _boxersComparisonServices = boxersComparisonServices;
     }
+
+
+
+        [Authorize(Roles = "admin,coach,boxer")]
         [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxerViewModel>))]
         [ProducesResponseType(404)]

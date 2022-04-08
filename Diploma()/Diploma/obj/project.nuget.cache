@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BQmppAXDWsopck9GSu5XzE+5wxkO52ols8b7oW/EYx9Sjpv6CsJnKqwXZyk6izreivKpsYS+DI/otvGt3FysCg==",
+  "dgSpecHash": "kSp91SDnkj9bSLRD8vRfTDVUZId/hQ5xo5PKIZhbgGYqdnjWt+ISNyh5Uj9vK1lpvSsLgxjxJyX3ssLdqDqeSg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Михаил\\Desktop\\DiplomaBackend\\Diploma()\\Diploma\\Diploma.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Михаил\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Михаил\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\Михаил\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.21\\microsoft.aspnetcore.authentication.jwtbearer.3.1.21.nupkg.sha512",
     "C:\\Users\\Михаил\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Михаил\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Михаил\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

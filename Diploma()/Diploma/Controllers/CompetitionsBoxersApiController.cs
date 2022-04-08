@@ -2,6 +2,7 @@
 using Diploma.ViewModels.Boxers;
 using Diploma.ViewModels.Competitions;
 using Diploma.ViewModels.CompetitionsBoxers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace Diploma.Controllers
             _mapper = mapper;
         }
 
-
+        [Authorize]
         [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxerViewModel>))]
         [ProducesResponseType(404)]
@@ -62,6 +63,7 @@ namespace Diploma.Controllers
 
 
 
+        [Authorize(Roles = "admin,coach,boxer")]
         [HttpPost] // POST: /api/competitions/boxer
         public ActionResult<InputCompetitionsBoxersViewModel> PostCompetition(InputCompetitionsBoxersViewModel inputModel)
         {
@@ -73,8 +75,8 @@ namespace Diploma.Controllers
         }
 
 
-
-           [HttpDelete("{id}")] // DELETE: /api/competitions/boxer/1
+        [Authorize(Roles = "admin")]
+        [HttpDelete("{id}")] // DELETE: /api/competitions/boxer/1
         public ActionResult<DeleteCompetitionsBoxersViewModel> DeleteCompetitionBoxers(int id)
          {
              var boxers = _context.CompetitionsBoxers.Where(a=>a.CompetitionsId==id);
@@ -89,7 +91,7 @@ namespace Diploma.Controllers
         }
 
 
-
+        [Authorize(Roles = "admin,coach,boxer")]
         [HttpDelete] // DELETE: /api/competitions/boxer
         public ActionResult<DeleteCompetitionsBoxersViewModel> DeleteBoxerParticipating([FromQuery] DeleteCompetitionsBoxersViewModel viewModel)
         {

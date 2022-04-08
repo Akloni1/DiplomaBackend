@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Diploma.ViewModels.BoxingClubs;
 using Diploma.ViewModels.CompetitionsClubs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,7 @@ namespace Diploma.Controllers
         }
 
 
+        [Authorize(Roles = "admin,coach,boxer")]
         [HttpGet("{id}")]  // GET: Выводит клубы участвующие в соревнованих 
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxingClubsViewModel>))]
         [ProducesResponseType(404)]
@@ -64,6 +66,7 @@ namespace Diploma.Controllers
 
 
 
+        [Authorize(Roles = "admin")]
         [HttpPost] // POST: /api/competitions/clubs / добавление клуба в соревнования
         public ActionResult<InputCompetitionsClubsViewModel> PostClub(InputCompetitionsClubsViewModel inputModel)
         {
@@ -74,8 +77,9 @@ namespace Diploma.Controllers
             return CreatedAtAction("GetById", new { id = competitionClub.CompetitionsId }, _mapper.Map<InputCompetitionsClubsViewModel>(inputModel));
         }
 
-        
 
+
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")] // DELETE: /api/competitions/clubs/1/ удаляет все клубы привязанные к соревнованию 
        
         public ActionResult<IEnumerable<DeleteCompetitionsClubsViewModel>> DeleteCompetitionClubs(int id)
@@ -92,6 +96,7 @@ namespace Diploma.Controllers
 
 
 
+        [Authorize(Roles = "admin")]
         [HttpDelete] // DELETE: /api/competitions/boxer / Удаляет конкретный БК из соревнования 
         public ActionResult<DeleteCompetitionsClubsViewModel> DeleteBoxingClubParticipating([FromQuery] DeleteCompetitionsClubsViewModel viewModel)
         {

@@ -1,6 +1,6 @@
 ﻿namespace Diploma.ViewModels.Boxers
 {
-    public class DeleteBoxerViewModel: InputBoxerViewModel
+    public class DeleteBoxerViewModel: EditBoxerViewModel
     {
         
     }

@@ -112,3 +112,4 @@ C:\Users\Михаил\Desktop\DiplomaBackend\Diploma()\Diploma\obj\Debug\net6.0\
 C:\Users\Михаил\Desktop\DiplomaBackend\Diploma()\Diploma\obj\Debug\net6.0\Diploma.pdb
 C:\Users\Михаил\Desktop\DiplomaBackend\Diploma()\Diploma\obj\Debug\net6.0\Diploma.genruntimeconfig.cache
 C:\Users\Михаил\Desktop\DiplomaBackend\Diploma()\Diploma\obj\Debug\net6.0\ref\Diploma.dll
+C:\Users\Михаил\Desktop\DiplomaBackend\Diploma()\Diploma\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

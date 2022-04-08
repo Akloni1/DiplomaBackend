@@ -2,6 +2,7 @@
 using Diploma.ViewModels.Boxers;
 using Diploma.ViewModels.Competitions;
 using Diploma.ViewModels.CompetitionsBoxers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -31,8 +32,8 @@ namespace Diploma.Controllers
         }
 
 
-
-        [HttpGet] // GET: /api/competitions
+        [Authorize]
+        [HttpGet] // GET
         [ProducesResponseType(200, Type = typeof(IEnumerable<CompetitionsViewModel>))]
         [ProducesResponseType(404)]
         public ActionResult<IEnumerable<CompetitionsViewModel>> GetCompetitions()
@@ -44,11 +45,11 @@ namespace Diploma.Controllers
 
 
 
-       
- 
 
 
-        
+
+
+        [Authorize]
         [HttpGet("{id}")] // GET: /api/Competitions/5
         [ProducesResponseType(200, Type = typeof(CompetitionsViewModel))]
         [ProducesResponseType(404)]
@@ -59,7 +60,10 @@ namespace Diploma.Controllers
             return Ok(competition);
         }
 
-          [HttpPost] // POST: api/Competitions
+
+        [Authorize(Roles = "admin")]
+
+        [HttpPost] // POST: api/Competitions
           public ActionResult<InputCompetitionsViewModel> PostCompetition(InputCompetitionsViewModel inputModel)
           {
 
@@ -69,7 +73,10 @@ namespace Diploma.Controllers
               return CreatedAtAction("GetById", new { id = competition.CompetitionsId }, _mapper.Map<InputCompetitionsViewModel>(inputModel));
           }
 
-          [HttpPut("{id}")] // PUT: api/Competitions/5
+
+        [Authorize(Roles = "admin")]
+
+        [HttpPut("{id}")] // PUT: api/Competitions/5
         public IActionResult UpdateBoxer(int id, EditCompetitionsViewModel editModel)
           {
               try
@@ -95,7 +102,9 @@ namespace Diploma.Controllers
               }
           }
 
-         [HttpDelete("{id}")] // DELETE: api/Competitions/5
+        [Authorize(Roles = "admin")]
+
+        [HttpDelete("{id}")] // DELETE: api/Competitions/5
         public ActionResult<DeleteCompetitionsViewModel> DeleteCompetition(int id)
           {
 

@@ -4,6 +4,7 @@ using AutoMapper;
 using Diploma;
 using Diploma.Services;
 using Diploma.ViewModels.Boxers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,6 +22,7 @@ namespace Diploma.Controllers
             _boxersServices = boxersServices;
         }
 
+        [Authorize]
         [HttpGet] // GET: /api/boxers
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxerViewModel>))]
         [ProducesResponseType(404)]
@@ -31,7 +33,7 @@ namespace Diploma.Controllers
         }
 
 
-
+        [Authorize]
         [HttpGet("{id}")] // GET: /api/boxers/5
         [ProducesResponseType(200, Type = typeof(BoxerViewModel))]
         [ProducesResponseType(404)]
@@ -42,22 +44,27 @@ namespace Diploma.Controllers
             return Ok(boxer);
         }
 
+        [Authorize(Roles = "admin,coach")]
         [HttpPost] // POST: api/boxers
-        public ActionResult<InputBoxerViewModel> PostBoxer(InputBoxerViewModel inputModel)
+        public ActionResult<BoxerViewModel> PostBoxer(InputBoxerViewModel inputModel)
         {
             var boxer = _boxersServices.AddBoxer(inputModel);
             //  return CreatedAtAction("GetById", new { id = boxer.BoxerId }, _mapper.Map<InputBoxerViewModel>(inputModel));
             return boxer;
         }
 
+
+        [Authorize(Roles = "admin,coach")]
         [HttpPut("{id}")] // PUT: api/boxers/5
         public IActionResult UpdateBoxer(int id, EditBoxerViewModel editModel)
         {
+
             var boxer = _boxersServices.UpdateBoxer(id, editModel);
             if (boxer == null) return BadRequest();
             return Ok(boxer);
         }
 
+        [Authorize(Roles = "admin,coach")]
         [HttpDelete("{id}")] // DELETE: api/boxers/5
         public ActionResult<DeleteBoxerViewModel> DeleteBoxer(int id)
         {

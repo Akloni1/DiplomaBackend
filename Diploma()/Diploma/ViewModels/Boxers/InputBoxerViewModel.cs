@@ -13,6 +13,9 @@ namespace Diploma.ViewModels.Boxers
         public int? NumberOfFightsHeld { get; set; }
         public int? NumberOfWins { get; set; }
         public string Discharge { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public string Role { get; set; }
         public int? CoachId { get; set; }
         public int? BoxingClubId { get; set; }
     }

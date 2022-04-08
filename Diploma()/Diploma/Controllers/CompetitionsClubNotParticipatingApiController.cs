@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Diploma.ViewModels.BoxingClubs;
 using Diploma.ViewModels.CompetitionsClubs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace Diploma.Controllers
 
 
 
+        [Authorize(Roles = "admin")]
         [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxingClubsViewModel>))]
         [ProducesResponseType(404)]

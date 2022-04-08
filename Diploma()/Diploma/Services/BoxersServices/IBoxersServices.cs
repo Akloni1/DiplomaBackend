@@ -8,7 +8,7 @@ namespace Diploma.Services
         BoxerViewModel GetBoxer(int id);
         IEnumerable<BoxerViewModel> GetAllBoxers();
         EditBoxerViewModel UpdateBoxer(int id, EditBoxerViewModel boxerModel);
-        InputBoxerViewModel AddBoxer(InputBoxerViewModel boxerModel);
+        BoxerViewModel AddBoxer(InputBoxerViewModel boxerModel);
         DeleteBoxerViewModel DeleteBoxer(int id);
     }
 }

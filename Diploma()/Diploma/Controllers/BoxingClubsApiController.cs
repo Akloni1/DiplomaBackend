@@ -4,6 +4,7 @@ using AutoMapper;
 using Diploma.Services.BoxingClubsServices;
 using Diploma.ViewModels.Boxers;
 using Diploma.ViewModels.BoxingClubs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,7 +23,9 @@ namespace Diploma.Controllers
             _boxingClubsServices = boxingClubsServices;
         }
 
-        [HttpGet] // GET: /api/boxers
+
+        [Authorize]
+        [HttpGet] // GET
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxingClubsViewModel>))]  
         [ProducesResponseType(404)]
         public ActionResult<IEnumerable<BoxingClubsViewModel>> GetBoxingClubs()
@@ -31,9 +34,9 @@ namespace Diploma.Controllers
             return Ok(boxingClubs);
          
         }
-        
-        
-        
+
+
+        [Authorize]
         [HttpGet("{id}")] // GET: /api/boxers/5
         [ProducesResponseType(200, Type = typeof(BoxingClubsViewModel))]  
         [ProducesResponseType(404)]
@@ -43,14 +46,16 @@ namespace Diploma.Controllers
             if (boxingClubs == null) return NotFound();
             return Ok(boxingClubs);
         }
-        
+
+        [Authorize(Roles = "admin")]
         [HttpPost] // POST: api/boxers
         public ActionResult<InputBoxingClubsViewModel> PostBoxingClubs(InputBoxingClubsViewModel inputModel)
         {
             var boxingClub = _boxingClubsServices.AddBoxingClub(inputModel); 
             return Ok(boxingClub);
         }
-        
+
+        [Authorize(Roles = "admin")]
         [HttpPut("{id}")] // PUT: api/boxers/5
         public IActionResult UpdateBoxingClub(int id, EditBoxingClubsViewModel editModel)
         {
@@ -58,7 +63,8 @@ namespace Diploma.Controllers
             if (boxingClub == null) return BadRequest();
             return Ok(boxingClub);
         }
-        
+
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")] // DELETE: api/boxingClubs/5
         public ActionResult<DeleteBoxingClubsViewModel> DeleteBoxingClubs(int id)
         {

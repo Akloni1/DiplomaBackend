@@ -1,6 +1,6 @@
 ﻿namespace Diploma.ViewModels.Coaches
 {
-    public class DeleteCoachViewModel : InputCoachViewModel
+    public class DeleteCoachViewModel : EditCoachViewModel
     {
         
     }

@@ -36,10 +36,10 @@ namespace Diploma.Services
 
 
 
-        public InputBoxerViewModel AddBoxer(InputBoxerViewModel inputModel)
+        public BoxerViewModel AddBoxer(InputBoxerViewModel inputModel)
         {
             var boxer = _boxersRepository.AddBoxer(_mapper.Map<Boxers>(inputModel));
-            return _mapper.Map<InputBoxerViewModel>(boxer);
+            return _mapper.Map<BoxerViewModel>(boxer);
 
         }
 

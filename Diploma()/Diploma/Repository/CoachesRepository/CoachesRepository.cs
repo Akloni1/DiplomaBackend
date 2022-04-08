@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Diploma.Cryptography;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,14 +10,17 @@ namespace Diploma.Repository.CoachesRepository
 
 
         private readonly BoxContext _context;
+        private readonly PwdHash _pwdHash;
 
         public CoachesRepository(BoxContext context)
         {
+            _pwdHash = new PwdHash();
             _context = context;
         }
 
         public Coaches AddCoach(Coaches coachModel)
         {
+            coachModel.Password = _pwdHash.sha256encrypt(coachModel.Password, coachModel.Login);
             var coach = _context.Add(coachModel).Entity;
             _context.SaveChanges();
             return coach;
@@ -48,8 +52,13 @@ namespace Diploma.Repository.CoachesRepository
         {
             try
             {
-                var coach = coachModel;
+
+                var coachNotEdit = _context.Coaches.FirstOrDefault(m => m.CoachId == id);
+                _context.Entry(coachNotEdit).State = EntityState.Detached;
+                Coaches coach = coachModel;
                 coach.CoachId = id;
+                coach.Login = coachNotEdit.Login;
+                coach.Password = coachNotEdit.Password;
 
                 _context.Update(coach);
                 _context.SaveChanges();
