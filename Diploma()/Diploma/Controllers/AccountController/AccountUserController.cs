@@ -46,8 +46,26 @@ namespace Diploma.Controllers.AccountController
                 return Ok($"Пользователь не найден");
             }
 
-           
+        }
 
+        [Route("getuserbylogin")]
+
+        public dynamic GetUserByLogin([FromQuery] string login)
+        {
+            var boxer = _context.Boxers.Where(a => a.Login == login).FirstOrDefault();
+            var coach = _context.Coaches.Where(a => a.Login == login).FirstOrDefault();
+            if (boxer != null)
+            {
+                return Ok(_mapper.Map<BoxerViewModel>(boxer));
+            }
+            else if (coach != null)
+            {
+                return Ok(_mapper.Map<CoachViewModel>(coach));
+            }
+            else
+            {
+                return null;
+            }
 
         }
 

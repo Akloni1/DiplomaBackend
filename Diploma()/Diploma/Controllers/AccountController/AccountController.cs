@@ -16,7 +16,7 @@ using Diploma.ViewModels.Authorization;
 namespace Diploma.Controllers.AccountController
 {
     [ApiController]
-    [Route("/token")]
+    [Route("api/token")]
     public class AccountController : Controller
     {
 
