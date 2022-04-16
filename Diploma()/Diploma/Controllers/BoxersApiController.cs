@@ -44,7 +44,7 @@ namespace Diploma.Controllers
             return Ok(boxer);
         }
 
-        [Authorize(Roles = "admin,coach")]
+        [Authorize(Roles = "admin,coach,lead")]
         [HttpPost] // POST: api/boxers
         public ActionResult<BoxerViewModel> PostBoxer(InputBoxerViewModel inputModel)
         {
@@ -54,7 +54,7 @@ namespace Diploma.Controllers
         }
 
 
-        [Authorize(Roles = "admin,coach")]
+        [Authorize(Roles = "admin,coach,lead")]
         [HttpPut("{id}")] // PUT: api/boxers/5
         public IActionResult UpdateBoxer(int id, EditBoxerViewModel editModel)
         {
@@ -64,7 +64,7 @@ namespace Diploma.Controllers
             return Ok(boxer);
         }
 
-        [Authorize(Roles = "admin,coach")]
+        [Authorize(Roles = "admin,coach,lead")]
         [HttpDelete("{id}")] // DELETE: api/boxers/5
         public ActionResult<DeleteBoxerViewModel> DeleteBoxer(int id)
         {

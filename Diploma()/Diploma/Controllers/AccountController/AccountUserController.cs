@@ -3,8 +3,10 @@ using System.Linq;
 using AutoMapper;
 using Diploma;
 using Diploma.Services;
+using Diploma.ViewModels.Admins;
 using Diploma.ViewModels.Boxers;
 using Diploma.ViewModels.Coaches;
+using Diploma.ViewModels.Lead;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +35,8 @@ namespace Diploma.Controllers.AccountController
         {
             var boxer= _context.Boxers.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
             var coach = _context.Coaches.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
+            var admin = _context.Admins.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
+            var lead = _context.Leads.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
             if (boxer != null)
             {
               return Ok(_mapper.Map<BoxerViewModel>(boxer));
@@ -40,6 +44,14 @@ namespace Diploma.Controllers.AccountController
             else if (coach!=null)
             {
                 return Ok(_mapper.Map<CoachViewModel>(coach));
+            }
+            else if (admin != null)
+            {
+                return Ok(_mapper.Map<AdminViewModel>(admin));
+            }
+            else if (lead != null)
+            {
+                return Ok(_mapper.Map<LeadViewModel>(lead));
             }
             else
             {
@@ -54,6 +66,8 @@ namespace Diploma.Controllers.AccountController
         {
             var boxer = _context.Boxers.Where(a => a.Login == login).FirstOrDefault();
             var coach = _context.Coaches.Where(a => a.Login == login).FirstOrDefault();
+            var admin = _context.Admins.Where(a => a.Login == login).FirstOrDefault();
+            var lead = _context.Leads.Where(a => a.Login == login).FirstOrDefault();
             if (boxer != null)
             {
                 return Ok(_mapper.Map<BoxerViewModel>(boxer));
@@ -61,6 +75,14 @@ namespace Diploma.Controllers.AccountController
             else if (coach != null)
             {
                 return Ok(_mapper.Map<CoachViewModel>(coach));
+            }
+            else if (admin != null)
+            {
+                return Ok(_mapper.Map<AdminViewModel>(admin));
+            }
+            else if (lead != null)
+            {
+                return Ok(_mapper.Map<LeadViewModel>(lead));
             }
             else
             {

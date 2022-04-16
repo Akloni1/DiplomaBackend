@@ -63,7 +63,7 @@ namespace Diploma.Controllers
 
 
 
-        [Authorize(Roles = "admin,coach,boxer")]
+        [Authorize(Roles = "admin,coach,boxer,lead")]
         [HttpPost] // POST: /api/competitions/boxer
         public ActionResult<InputCompetitionsBoxersViewModel> PostCompetition(InputCompetitionsBoxersViewModel inputModel)
         {
@@ -75,7 +75,7 @@ namespace Diploma.Controllers
         }
 
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpDelete("{id}")] // DELETE: /api/competitions/boxer/1
         public ActionResult<DeleteCompetitionsBoxersViewModel> DeleteCompetitionBoxers(int id)
          {
@@ -91,7 +91,7 @@ namespace Diploma.Controllers
         }
 
 
-        [Authorize(Roles = "admin,coach,boxer")]
+        [Authorize(Roles = "admin,coach,boxer,lead")]
         [HttpDelete] // DELETE: /api/competitions/boxer
         public ActionResult<DeleteCompetitionsBoxersViewModel> DeleteBoxerParticipating([FromQuery] DeleteCompetitionsBoxersViewModel viewModel)
         {

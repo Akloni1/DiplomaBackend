@@ -61,7 +61,7 @@ namespace Diploma.Controllers
         }
 
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
 
         [HttpPost] // POST: api/Competitions
           public ActionResult<InputCompetitionsViewModel> PostCompetition(InputCompetitionsViewModel inputModel)
@@ -74,7 +74,7 @@ namespace Diploma.Controllers
           }
 
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
 
         [HttpPut("{id}")] // PUT: api/Competitions/5
         public IActionResult UpdateBoxer(int id, EditCompetitionsViewModel editModel)
@@ -102,7 +102,7 @@ namespace Diploma.Controllers
               }
           }
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
 
         [HttpDelete("{id}")] // DELETE: api/Competitions/5
         public ActionResult<DeleteCompetitionsViewModel> DeleteCompetition(int id)

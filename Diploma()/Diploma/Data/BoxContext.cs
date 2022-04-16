@@ -25,7 +25,8 @@ namespace Diploma
         public virtual DbSet<Competitions> Competitions { get; set; }
         public virtual DbSet<CompetitionsBoxers> CompetitionsBoxers { get; set; }
         public virtual DbSet<CompetitionsClubs> CompetitionsClubs { get; set; }
-        public virtual DbSet<EmployeesClub> EmployeesClub { get; set; }
+        public virtual DbSet<Admin> Admins { get; set; }
+        public virtual DbSet<Lead> Leads { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -171,9 +172,9 @@ namespace Diploma
                     .HasConstraintName("FK_CompetitionsClubs_Competitions");
             });
 
-            modelBuilder.Entity<EmployeesClub>(entity =>
+            modelBuilder.Entity<Admin>(entity =>
             {
-                entity.HasKey(e => e.EmployeeId);
+                entity.HasKey(e => e.AdminId);
 
                 entity.HasIndex(e => e.BoxingClubId);
 
@@ -189,14 +190,29 @@ namespace Diploma
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Post)
+
+                entity.HasOne(d => d.BoxingClub)
+                    .WithMany(p => p.Admin)
+                    .HasForeignKey(d => d.BoxingClubId)
+                    .HasConstraintName("FK_EmployeesClub_BoxingClubs");
+            });
+
+            modelBuilder.Entity<Lead>(entity =>
+            {
+                entity.HasKey(e => e.LeadId);
+
+
+                entity.Property(e => e.FirstName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.HasOne(d => d.BoxingClub)
-                    .WithMany(p => p.EmployeesClub)
-                    .HasForeignKey(d => d.BoxingClubId)
-                    .HasConstraintName("FK_EmployeesClub_BoxingClubs");
+                entity.Property(e => e.LastName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.MiddleName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

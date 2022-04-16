@@ -14,7 +14,7 @@ namespace Diploma
             Boxers = new HashSet<Boxers>();
             Coaches = new HashSet<Coaches>();
             CompetitionsClubs = new HashSet<CompetitionsClubs>();
-            EmployeesClub = new HashSet<EmployeesClub>();
+            Admin = new HashSet<Admin>();
         }
 
         public int BoxingClubId { get; set; }
@@ -24,6 +24,6 @@ namespace Diploma
         public virtual ICollection<Boxers> Boxers { get; set; }
         public virtual ICollection<Coaches> Coaches { get; set; }
         public virtual ICollection<CompetitionsClubs> CompetitionsClubs { get; set; }
-        public virtual ICollection<EmployeesClub> EmployeesClub { get; set; }
+        public virtual ICollection<Admin> Admin { get; set; }
     }
 }

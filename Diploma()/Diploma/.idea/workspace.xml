@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef524a31-4310-4e88-98c2-a26edae86094" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.vs/Diploma/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Diploma/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Diploma/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Diploma/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Diploma/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Diploma/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AccountController/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AccountController/AccountUserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController/AccountUserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/BoxContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/BoxContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Migrations/BoxContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Migrations/BoxContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/BoxingClubs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/BoxingClubs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/EmployeesClub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewModels/AutoMapperProfiles/BoxerProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/AutoMapperProfiles/BoxerProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Diploma.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Diploma.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Diploma.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Diploma.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Diploma.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Diploma.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Diploma.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Diploma.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Diploma.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Diploma.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Diploma.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Diploma.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Diploma.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Diploma.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="27smK1dlrbBM25maHyimIEJIBtg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef524a31-4310-4e88-98c2-a26edae86094" name="Default Changelist" comment="" />
+      <created>1650117102208</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650117102208</updated>
+      <workItem from="1650117103271" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

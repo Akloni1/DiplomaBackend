@@ -44,7 +44,7 @@ namespace Diploma.Controllers
             return Ok(coach);
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpPost] // POST: api/boxers
         public ActionResult<InputCoachViewModel> PostCoaches(InputCoachViewModel inputModel)
         {
@@ -52,7 +52,7 @@ namespace Diploma.Controllers
             return Ok(coach);
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpPut("{id}")] // PUT: api/boxers/5
         public IActionResult UpdateCoach(int id, EditCoachViewModel editModel)
         {
@@ -63,7 +63,7 @@ namespace Diploma.Controllers
          
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpDelete("{id}")] // DELETE: api/boxingClubs/5
         public ActionResult<DeleteCoachViewModel> DeleteCoach(int id)
         {

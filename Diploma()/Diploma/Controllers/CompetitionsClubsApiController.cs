@@ -28,7 +28,7 @@ namespace Diploma.Controllers
         }
 
 
-        [Authorize(Roles = "admin,coach,boxer")]
+        [Authorize(Roles = "admin,coach,boxer,lead")]
         [HttpGet("{id}")]  // GET: Выводит клубы участвующие в соревнованих 
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxingClubsViewModel>))]
         [ProducesResponseType(404)]
@@ -66,7 +66,7 @@ namespace Diploma.Controllers
 
 
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpPost] // POST: /api/competitions/clubs / добавление клуба в соревнования
         public ActionResult<InputCompetitionsClubsViewModel> PostClub(InputCompetitionsClubsViewModel inputModel)
         {
@@ -79,7 +79,7 @@ namespace Diploma.Controllers
 
 
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpDelete("{id}")] // DELETE: /api/competitions/clubs/1/ удаляет все клубы привязанные к соревнованию 
        
         public ActionResult<IEnumerable<DeleteCompetitionsClubsViewModel>> DeleteCompetitionClubs(int id)
@@ -96,7 +96,7 @@ namespace Diploma.Controllers
 
 
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpDelete] // DELETE: /api/competitions/boxer / Удаляет конкретный БК из соревнования 
         public ActionResult<DeleteCompetitionsClubsViewModel> DeleteBoxingClubParticipating([FromQuery] DeleteCompetitionsClubsViewModel viewModel)
         {

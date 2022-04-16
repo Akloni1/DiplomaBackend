@@ -23,7 +23,7 @@ namespace Diploma.Controllers
 
 
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,lead")]
         [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxingClubsViewModel>))]
         [ProducesResponseType(404)]
