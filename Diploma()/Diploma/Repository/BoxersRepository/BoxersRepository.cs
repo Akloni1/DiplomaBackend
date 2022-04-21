@@ -33,11 +33,16 @@ namespace Diploma.Repository
 
         public Boxers AddBoxer(Boxers inputModel)
         {
-
-            inputModel.Password = _pwdHash.sha256encrypt(inputModel.Password, inputModel.Login);
-            var boxer = _context.Add(inputModel).Entity;
-            _context.SaveChanges();
-            return boxer;
+            if (!BoxerExists(inputModel.Login)) {
+                inputModel.Password = _pwdHash.sha256encrypt(inputModel.Password, inputModel.Login);
+                var boxer = _context.Add(inputModel).Entity;
+                _context.SaveChanges();
+                return boxer;
+            }
+            else
+            {
+                return null;
+            }
 
         }
 
@@ -91,6 +96,11 @@ namespace Diploma.Repository
         private bool BoxerExists(int id)
         {
             return _context.Boxers.Any(e => e.BoxerId == id);
+        }
+
+        private bool BoxerExists(string login)
+        {
+            return _context.Boxers.Any(e => e.Login == login);
         }
 
     }

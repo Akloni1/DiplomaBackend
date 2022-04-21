@@ -48,9 +48,14 @@ namespace Diploma.Controllers
         [HttpPost] // POST: api/boxers
         public ActionResult<BoxerViewModel> PostBoxer(InputBoxerViewModel inputModel)
         {
+
             var boxer = _boxersServices.AddBoxer(inputModel);
             //  return CreatedAtAction("GetById", new { id = boxer.BoxerId }, _mapper.Map<InputBoxerViewModel>(inputModel));
-            return boxer;
+            if (boxer != null)
+            {
+                return boxer;
+            }
+                return BadRequest();
         }
 
 
@@ -73,5 +78,7 @@ namespace Diploma.Controllers
             if (boxer == null) return NotFound();
             return Ok(boxer);
         }
+
+
     }
 }
