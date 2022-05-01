@@ -6,10 +6,10 @@ namespace Diploma.Services.CoachesServices
 {
     public interface ICoachesServices
     {
-        CoachViewModel GetCoach(int id);
+        Task<CoachViewModel> GetCoach(int id);
         Task<ICollection<CoachViewModel>> GetAllCoaches();
-        EditCoachViewModel UpdateCoaches(int id, EditCoachViewModel coachModel);
-        CoachViewModel AddCoach(InputCoachViewModel coachModel);
-        DeleteCoachViewModel DeleteCoach(int id);
+        Task<EditCoachViewModel> UpdateCoaches(int id, EditCoachViewModel coachModel);
+        Task<CoachViewModel> AddCoach(InputCoachViewModel coachModel);
+        Task<DeleteCoachViewModel> DeleteCoach(int id);
     }
 }

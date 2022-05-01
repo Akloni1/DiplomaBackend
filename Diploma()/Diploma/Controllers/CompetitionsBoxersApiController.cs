@@ -4,6 +4,7 @@ using Diploma.ViewModels.Competitions;
 using Diploma.ViewModels.CompetitionsBoxers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,37 +27,38 @@ namespace Diploma.Controllers
         }
 
         [Authorize]
-        [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
+        [HttpGet("{id}")]  // GET: /api/competitions/boxer/1 выводит боксеров которые учавтвуют в соревнованиях
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxerViewModel>))]
         [ProducesResponseType(404)]
-        public ActionResult<IEnumerable<BoxerViewModel>> GetBoxersByIdCompetition(int id)
+        public async Task<ActionResult<IEnumerable<BoxerViewModel>>> GetBoxersByIdCompetition(int id)
         {
-            var competitionsBoxers = _mapper.Map<IEnumerable<CompetitionsBoxers>, IEnumerable<CompetitionsBoxersViewModel>>(_context.CompetitionsBoxers.Where(a => a.CompetitionsId == id).ToList());
+            var competitionsBoxers = _mapper.Map<IEnumerable<CompetitionsBoxers>, IEnumerable<CompetitionsBoxersViewModel>>(await _context.CompetitionsBoxers.Where(a => a.CompetitionsId == id).ToListAsync());
             var idBoxers = competitionsBoxers.Select(h => h.BoxerId).ToList();
-            List<IEnumerable<BoxerViewModel>> boxers = new List<IEnumerable<BoxerViewModel>>();
+            List<BoxerViewModel> boxers = new List<BoxerViewModel>();
 
             foreach (int BoxerId in idBoxers)
             {
-                boxers.Add(_mapper.Map<IEnumerable<Boxers>, IEnumerable<BoxerViewModel>>(_context.Boxers.Where(a => a.BoxerId == BoxerId).ToList()));
+                boxers.Add(_mapper.Map<BoxerViewModel>(await _context.Boxers.Where(a => a.BoxerId == BoxerId).FirstOrDefaultAsync()));
+                // boxers.Add(_mapper.Map<IEnumerable<Boxers>, IEnumerable<BoxerViewModel>>( _context.Boxers.Where(a => a.BoxerId == BoxerId).ToListAsync()));
             }
 
-            IEnumerable<BoxerViewModel> boxersConcat = null;
-            if (boxers.Count>0)
-            {
-                 boxersConcat = boxers[0];
-                for (int i = 0; i < boxers.Count - 1; i++)
-                {
-                    boxersConcat = (boxersConcat ?? Enumerable.Empty<BoxerViewModel>()).Concat(boxers[i + 1] ?? Enumerable.Empty<BoxerViewModel>());
-                }
-            }
-            //  else return NotFound();
-            else
-            {
-                List<BoxerViewModel> boxerViewModels = new List<BoxerViewModel>();
-                return boxerViewModels;
-            }
+            /* IEnumerable<BoxerViewModel> boxersConcat = null;
+             if (boxers.Count>0)
+             {
+                  boxersConcat = boxers[0];
+                 for (int i = 0; i < boxers.Count - 1; i++)
+                 {
+                     boxersConcat = (boxersConcat ?? Enumerable.Empty<BoxerViewModel>()).Concat(boxers[i + 1] ?? Enumerable.Empty<BoxerViewModel>());
+                 }
+             }
+             //  else return NotFound();
+             else
+             {
+                 List<BoxerViewModel> boxerViewModels = new List<BoxerViewModel>();
+                 return boxerViewModels;
+             }*/
 
-            return Ok(boxersConcat);
+            return Ok(boxers);
         }
 
 
@@ -65,40 +67,40 @@ namespace Diploma.Controllers
 
         [Authorize(Roles = "admin,coach,boxer,lead")]
         [HttpPost] // POST: /api/competitions/boxer
-        public ActionResult<InputCompetitionsBoxersViewModel> PostCompetition(InputCompetitionsBoxersViewModel inputModel)
+        public async Task<ActionResult<InputCompetitionsBoxersViewModel>> PostCompetition(InputCompetitionsBoxersViewModel inputModel)
         {
 
             var competitionBoxer = _context.Add(_mapper.Map<CompetitionsBoxers>(inputModel)).Entity;
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetById", new { id = competitionBoxer.CompetitionsId }, _mapper.Map<InputCompetitionsBoxersViewModel>(inputModel));
         }
 
 
         [Authorize(Roles = "admin,lead")]
-        [HttpDelete("{id}")] // DELETE: /api/competitions/boxer/1
-        public ActionResult<DeleteCompetitionsBoxersViewModel> DeleteCompetitionBoxers(int id)
-         {
-             var boxers = _context.CompetitionsBoxers.Where(a=>a.CompetitionsId==id);
-             if (boxers == null) return NotFound();
-          
-            _context.CompetitionsBoxers.RemoveRange(boxers);
-       
-             _context.SaveChanges();
+        [HttpDelete("{id}")] // DELETE: /api/competitions/boxer/1 удаление всех боксеров из соревнования
+        public async Task<ActionResult<DeleteCompetitionsBoxersViewModel>> DeleteCompetitionBoxers(int id)
+        {
+            var boxers = await _context.CompetitionsBoxers.Where(a => a.CompetitionsId == id).ToListAsync();
+            if (boxers == null) { return NotFound(); }
+            else
+            {
 
-            //  return Ok(_mapper.Map<DeleteCompetitionsBoxersViewModel>(boxers));
-            return Ok(boxers);
+                _context.CompetitionsBoxers.RemoveRange(boxers);
+                await _context.SaveChangesAsync();
+                return Ok(boxers);
+            }
         }
 
 
         [Authorize(Roles = "admin,coach,boxer,lead")]
-        [HttpDelete] // DELETE: /api/competitions/boxer
-        public ActionResult<DeleteCompetitionsBoxersViewModel> DeleteBoxerParticipating([FromQuery] DeleteCompetitionsBoxersViewModel viewModel)
+        [HttpDelete] // DELETE: /api/competitions/boxer удаление конкретного боксера из соревнований
+        public async Task<ActionResult<DeleteCompetitionsBoxersViewModel>> DeleteBoxerParticipating([FromQuery] DeleteCompetitionsBoxersViewModel viewModel)
         {
-            var boxer = _context.CompetitionsBoxers.Where(a => a.CompetitionsId == viewModel.CompetitionsId && a.BoxerId== viewModel.BoxerId);
+            var boxer = await _context.CompetitionsBoxers.Where(a => a.CompetitionsId == viewModel.CompetitionsId && a.BoxerId == viewModel.BoxerId).FirstOrDefaultAsync();
             if (boxer == null) return NotFound();
-            _context.CompetitionsBoxers.RemoveRange(boxer);
-            _context.SaveChanges();
+            _context.CompetitionsBoxers.Remove(boxer);
+            await _context.SaveChangesAsync();
             return Ok(boxer);
         }
     }

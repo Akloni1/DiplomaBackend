@@ -21,9 +21,9 @@ namespace Diploma.Services
             _mapper = mapper;
             _boxersRepository = boxersRepository;
         }
-        public BoxerViewModel GetBoxer(int id)
+        public async Task<BoxerViewModel> GetBoxer(int id)
         {
-            var boxer = _mapper.Map<BoxerViewModel>(_boxersRepository.GetBoxer(id));
+            var boxer = _mapper.Map<BoxerViewModel>(await _boxersRepository.GetBoxer(id));
 
             return boxer;
         }
@@ -37,19 +37,19 @@ namespace Diploma.Services
 
 
 
-        public BoxerViewModel AddBoxer(InputBoxerViewModel inputModel)
+        public async Task<BoxerViewModel> AddBoxer(InputBoxerViewModel inputModel)
         {
-            var boxer = _boxersRepository.AddBoxer(_mapper.Map<Boxers>(inputModel));
+            var boxer = await _boxersRepository.AddBoxer(_mapper.Map<Boxers>(inputModel));
             return _mapper.Map<BoxerViewModel>(boxer);
 
         }
 
 
 
-        public EditBoxerViewModel UpdateBoxer(int id, EditBoxerViewModel editModel)
+        public async Task<EditBoxerViewModel> UpdateBoxer(int id, EditBoxerViewModel editModel)
         {
 
-            var boxer = _boxersRepository.UpdateBoxer(id, _mapper.Map<Boxers>(editModel));
+            var boxer = await _boxersRepository.UpdateBoxer(id, _mapper.Map<Boxers>(editModel));
             if (boxer == null)
             {
                 return null;
@@ -60,9 +60,9 @@ namespace Diploma.Services
 
 
 
-        public DeleteBoxerViewModel DeleteBoxer(int id)
+        public async Task<DeleteBoxerViewModel> DeleteBoxer(int id)
         {
-            var boxer = _boxersRepository.DeleteBoxer(id);
+            var boxer = await _boxersRepository.DeleteBoxer(id);
             if (boxer == null) return null;
             return _mapper.Map<DeleteBoxerViewModel>(boxer);
         }

@@ -6,10 +6,10 @@ namespace Diploma.Services
 {
     public interface IBoxersServices
     {
-        BoxerViewModel GetBoxer(int id);
+        Task<BoxerViewModel> GetBoxer(int id);
         Task<ICollection<BoxerViewModel>> GetAllBoxers();
-        EditBoxerViewModel UpdateBoxer(int id, EditBoxerViewModel boxerModel);
-        BoxerViewModel AddBoxer(InputBoxerViewModel boxerModel);
-        DeleteBoxerViewModel DeleteBoxer(int id);
+        Task<EditBoxerViewModel> UpdateBoxer(int id, EditBoxerViewModel boxerModel);
+        Task<BoxerViewModel> AddBoxer(InputBoxerViewModel boxerModel);
+        Task<DeleteBoxerViewModel> DeleteBoxer(int id);
     }
 }

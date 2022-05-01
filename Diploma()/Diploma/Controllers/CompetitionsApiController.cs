@@ -36,9 +36,9 @@ namespace Diploma.Controllers
         [HttpGet] // GET
         [ProducesResponseType(200, Type = typeof(IEnumerable<CompetitionsViewModel>))]
         [ProducesResponseType(404)]
-        public ActionResult<IEnumerable<CompetitionsViewModel>> GetCompetitions()
+        public async Task<ActionResult<IEnumerable<CompetitionsViewModel>>> GetCompetitions()
         {
-            var competitions = _mapper.Map<IEnumerable<Competitions>, IEnumerable<CompetitionsViewModel>>(_context.Competitions.ToList());
+            var competitions = _mapper.Map<IEnumerable<Competitions>, IEnumerable<CompetitionsViewModel>>(await _context.Competitions.ToListAsync());
             return Ok(competitions);
         }
 
@@ -53,9 +53,9 @@ namespace Diploma.Controllers
         [HttpGet("{id}")] // GET: /api/Competitions/5
         [ProducesResponseType(200, Type = typeof(CompetitionsViewModel))]
         [ProducesResponseType(404)]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var competition = _mapper.Map<CompetitionsViewModel>(_context.Competitions.FirstOrDefault(m => m.CompetitionsId == id));
+            var competition = _mapper.Map<CompetitionsViewModel>(await _context.Competitions.FirstOrDefaultAsync(m => m.CompetitionsId == id));
             if (competition == null) return NotFound();
             return Ok(competition);
         }
@@ -64,68 +64,67 @@ namespace Diploma.Controllers
         [Authorize(Roles = "admin,lead")]
 
         [HttpPost] // POST: api/Competitions
-          public ActionResult<InputCompetitionsViewModel> PostCompetition(InputCompetitionsViewModel inputModel)
-          {
+        public async Task<ActionResult<InputCompetitionsViewModel>> PostCompetition(InputCompetitionsViewModel inputModel)
+        {
 
-              inputModel.IsStarted = false;
-              var competition = _context.Add(_mapper.Map<Competitions>(inputModel)).Entity;
-              _context.SaveChanges();
+            inputModel.IsStarted = false;
+            var competition = _context.Add(_mapper.Map<Competitions>(inputModel)).Entity;
+            await _context.SaveChangesAsync();
 
-              return CreatedAtAction("GetById", new { id = competition.CompetitionsId }, _mapper.Map<InputCompetitionsViewModel>(inputModel));
-          }
+            return CreatedAtAction("GetById", new { id = competition.CompetitionsId }, _mapper.Map<InputCompetitionsViewModel>(inputModel));
+        }
 
 
         [Authorize(Roles = "admin,lead")]
 
         [HttpPut("{id}")] // PUT: api/Competitions/5
-        public IActionResult UpdateBoxer(int id, EditCompetitionsViewModel editModel)
-          {
-              try
-              {
-                  var competition = _mapper.Map<Competitions>(editModel);
-                  competition.CompetitionsId = id;
-               //   competition.IsStarted = 
+        public async Task<IActionResult> UpdateBoxer(int id, EditCompetitionsViewModel editModel)
+        {
+            try
+            {
+                var competition = _mapper.Map<Competitions>(editModel);
+                competition.CompetitionsId = id;
+                _context.Update(competition);
+                await _context.SaveChangesAsync();
 
-                  _context.Update(competition);
-                  _context.SaveChanges();
-
-                  return Ok(_mapper.Map<EditCompetitionsViewModel>(competition));
-              }
-              catch (DbUpdateException)
-              {
-                  if (!CompetitionExists(id))
-                  {
-                      return BadRequest();
-                  }
-                  else
-                  {
-                      throw;
-                  }
-              }
-          }
+                return Ok(_mapper.Map<EditCompetitionsViewModel>(competition));
+            }
+            catch (DbUpdateException)
+            {
+                if (!await CompetitionExists(id))
+                {
+                    return BadRequest();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
 
         [Authorize(Roles = "admin,lead")]
 
         [HttpDelete("{id}")] // DELETE: api/Competitions/5
-        public ActionResult<DeleteCompetitionsViewModel> DeleteCompetition(int id)
-          {
+        public async Task<ActionResult<DeleteCompetitionsViewModel>> DeleteCompetition(int id)
+        {
 
 
 
-            _competitionsBoxersApiController.DeleteCompetitionBoxers(id);
-            _competitionsClubsApiController.DeleteCompetitionClubs(id);
+            await _competitionsBoxersApiController.DeleteCompetitionBoxers(id);
 
-              var competition = _context.Competitions.Find(id);
-              if (competition == null) return NotFound();
-              _context.Competitions.Remove(competition);
-              _context.SaveChanges();
+            await _competitionsClubsApiController.DeleteCompetitionClubs(id);
 
-             return Ok(_mapper.Map<DeleteCompetitionsViewModel>(competition));
-          }
+            var competition = await _context.Competitions.FindAsync(id);
+            if (competition == null) return NotFound();
+            _context.Competitions.Remove(competition);
+            await _context.SaveChangesAsync();
 
-          private bool CompetitionExists(int id)
-          {
-              return _context.Competitions.Any(e => e.CompetitionsId == id);
-          }
+            return Ok(_mapper.Map<DeleteCompetitionsViewModel>(competition));
+        }
+
+        private async Task<bool> CompetitionExists(int id)
+        {
+            return await _context.Competitions.AnyAsync(e => e.CompetitionsId == id);
+        }
     }
 }

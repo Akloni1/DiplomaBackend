@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using AutoMapper;
 using Diploma;
 using Diploma.Services;
@@ -31,12 +32,12 @@ namespace Diploma.Controllers.AccountController
         [Authorize]
         [Route("getuser")]
 
-        public dynamic GetUserByToken()
+        public async Task<dynamic> GetUserByToken()
         {
-            var boxer= _context.Boxers.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
-            var coach = _context.Coaches.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
-            var admin = _context.Admins.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
-            var lead = _context.Leads.Where(a => a.Login == User.Identity.Name).FirstOrDefault();
+            var boxer= await _context.Boxers.Where(a => a.Login == User.Identity.Name).FirstOrDefaultAsync();
+            var coach = await _context.Coaches.Where(a => a.Login == User.Identity.Name).FirstOrDefaultAsync();
+            var admin = await _context.Admins.Where(a => a.Login == User.Identity.Name).FirstOrDefaultAsync();
+            var lead = await _context.Leads.Where(a => a.Login == User.Identity.Name).FirstOrDefaultAsync();
             if (boxer != null)
             {
               return Ok(_mapper.Map<BoxerViewModel>(boxer));
@@ -62,12 +63,12 @@ namespace Diploma.Controllers.AccountController
 
         [Route("getuserbylogin")]
 
-        public dynamic GetUserByLogin([FromQuery] string login)
+        public async Task<dynamic> GetUserByLogin([FromQuery] string login)
         {
-            var boxer = _context.Boxers.Where(a => a.Login == login).FirstOrDefault();
-            var coach = _context.Coaches.Where(a => a.Login == login).FirstOrDefault();
-            var admin = _context.Admins.Where(a => a.Login == login).FirstOrDefault();
-            var lead = _context.Leads.Where(a => a.Login == login).FirstOrDefault();
+            var boxer = await _context.Boxers.Where(a => a.Login == login).FirstOrDefaultAsync();
+            var coach = await _context.Coaches.Where(a => a.Login == login).FirstOrDefaultAsync();
+            var admin = await _context.Admins.Where(a => a.Login == login).FirstOrDefaultAsync();
+            var lead = await _context.Leads.Where(a => a.Login == login).FirstOrDefaultAsync();
             if (boxer != null)
             {
                 return Ok(_mapper.Map<BoxerViewModel>(boxer));

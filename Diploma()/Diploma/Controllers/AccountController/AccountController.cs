@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using AutoMapper;
 using Diploma.Cryptography;
 using Diploma.ViewModels.Authorization;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Diploma.Controllers.AccountController
 {
@@ -35,12 +37,12 @@ namespace Diploma.Controllers.AccountController
 
 
         [HttpPost]
-        public IActionResult Token(Authorization authorization)
+        public async Task<IActionResult> Token(Authorization authorization)
         {
 
             authorization.Password = _pwdHash.sha256encrypt(authorization.Password, authorization.Login);
 
-            var identity = GetIdentity(authorization.Login, authorization.Password);
+            var identity = await GetIdentity(authorization.Login, authorization.Password);
             if (identity == null)
             {
                 return BadRequest(new { errorText = "Invalid username or password." });
@@ -69,14 +71,14 @@ namespace Diploma.Controllers.AccountController
             return Json(response);
         }
 
-        private ClaimsIdentity GetIdentity(string username, string password)
+        private async Task<ClaimsIdentity> GetIdentity(string username, string password)
         {
-            Coaches coach = _context.Coaches.FirstOrDefault(x => x.Login == username && x.Password == password);
-            Boxers boxer = _context.Boxers.FirstOrDefault(x => x.Login == username && x.Password == password);
-            Admin admin = _context.Admins.FirstOrDefault(x => x.Login == username && x.Password == password);
-            Lead lead = _context.Leads.FirstOrDefault(x => x.Login == username && x.Password == password);
-            //  Person person = people.FirstOrDefault(x => x.Login == username && x.Password == password);
-            // Boxers boxer = boxers.FirstOrDefault(x => x.Login == username && x.Password == password);
+           // Coaches coach1 = await _context.Coaches.FirstOrDefaultAsync(x => x.Login == username && x.Password == password);
+            Coaches coach = await _context.Coaches.FirstOrDefaultAsync(x => x.Login == username && x.Password == password);
+            Boxers boxer = await _context.Boxers.FirstOrDefaultAsync(x => x.Login == username && x.Password == password);
+            Admin admin = await _context.Admins.FirstOrDefaultAsync(x => x.Login == username && x.Password == password);
+            Lead lead = await _context.Leads.FirstOrDefaultAsync(x => x.Login == username && x.Password == password);
+           
 
             if (coach != null)
             {

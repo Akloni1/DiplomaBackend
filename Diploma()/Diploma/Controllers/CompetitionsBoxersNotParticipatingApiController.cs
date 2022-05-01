@@ -4,8 +4,10 @@ using Diploma.ViewModels.CompetitionsBoxers;
 using Diploma.ViewModels.CompetitionsClubs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Diploma.Controllers
 {
@@ -26,13 +28,13 @@ namespace Diploma.Controllers
 
 
         [Authorize(Roles = "admin,coach,boxer,lead")]
-        [HttpGet("{id}")]  // GET: /api/competitions/boxer/1
+        [HttpGet("{id}")]  // GET: /api/competitions/boxer/1 выводить список боксеров которые не участвуют в соревнованиях при этотом их клуб участвует
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxerViewModel>))]
         [ProducesResponseType(404)]
-        public ActionResult<IEnumerable<BoxerViewModel>> GetBoxersNotParticipatingByIdCompetition(int id)
+        public async Task<ActionResult<IEnumerable<BoxerViewModel>>> GetBoxersNotParticipatingByIdCompetition(int id)
         {
 
-            var competitionsBoxers = _mapper.Map<IEnumerable<CompetitionsBoxers>, IEnumerable<CompetitionsBoxersViewModel>>(_context.CompetitionsBoxers.Where(a => a.CompetitionsId == id).ToList());
+            var competitionsBoxers = _mapper.Map<IEnumerable<CompetitionsBoxers>, IEnumerable<CompetitionsBoxersViewModel>>(await _context.CompetitionsBoxers.Where(a => a.CompetitionsId == id).ToListAsync());
             var idBoxers = competitionsBoxers.Select(h => h.BoxerId).ToList();
 
             //Можно использовать в CompetitionsBoxersApiController
@@ -52,10 +54,10 @@ namespace Diploma.Controllers
 
            // var result = _mapper.Map<IEnumerable<Boxers>, IEnumerable<BoxerViewModel>>(from l1 in _context.Boxers where !idBoxers.Contains(l1.BoxerId) select l1);
           
-            var boxersNotParticipat = from l1 in _context.Boxers where !idBoxers.Contains(l1.BoxerId) select l1;
+            var boxersNotParticipat =  from l1 in await _context.Boxers.ToListAsync() where !idBoxers.Contains(l1.BoxerId) select l1;
            
 
-            var idClubs = _context.CompetitionsClubs.Where(a => a.CompetitionsId == id).Select(a => a.BoxingClubId).ToList();
+            var idClubs = await _context.CompetitionsClubs.Where(a => a.CompetitionsId == id).Select(a => a.BoxingClubId).ToListAsync();
 
             var result = _mapper.Map<IEnumerable<Boxers>, IEnumerable<BoxerViewModel>>(boxersNotParticipat.Where(x => idClubs.Contains((int)x.BoxingClubId)));
 

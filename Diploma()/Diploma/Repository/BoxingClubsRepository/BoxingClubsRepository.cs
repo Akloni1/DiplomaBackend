@@ -1,92 +1,91 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-
-
+using System.Threading.Tasks;
 
 namespace Diploma.Repository.BoxingClubsRepository
 {
-    public class BoxingClubsRepository: IBoxingClubsRepository
+    public class BoxingClubsRepository : IBoxingClubsRepository
     {
 
-            private readonly BoxContext _context;
+        private readonly BoxContext _context;
 
-            public BoxingClubsRepository(BoxContext context)
-            {
-                _context = context;
-            }
-
-
-
-            public BoxingClubs GetBoxingClub(int id)
-            {
-                var boxingClub = _context.BoxingClubs.FirstOrDefault(m => m.BoxingClubId == id);
-                return boxingClub;
-            }
-
-            public IEnumerable<BoxingClubs> GetAllBoxingClubs()
-            {
-                var boxingClubs = _context.BoxingClubs.ToList();
-                return boxingClubs;
-            }
+        public BoxingClubsRepository(BoxContext context)
+        {
+            _context = context;
+        }
 
 
 
-            public BoxingClubs AddBoxingClub(BoxingClubs inputModel)
-            {
+        public async Task<BoxingClubs> GetBoxingClub(int id)
+        {
+            var boxingClub = await _context.BoxingClubs.FirstOrDefaultAsync(m => m.BoxingClubId == id);
+            return boxingClub;
+        }
 
-                var boxingClub = _context.Add(inputModel).Entity;
-                _context.SaveChanges();
-                return boxingClub;
-
-            }
-
-
-
-            public BoxingClubs UpdateBoxingClub(int id, BoxingClubs editModel)
-            {
-                try
-                {
-                    var boxingClub = editModel;
-                boxingClub.BoxingClubId = id;
-
-                    _context.Update(boxingClub);
-                    _context.SaveChanges();
-
-                    return boxingClub;
-                }
-                catch (DbUpdateException)
-                {
-                    if (!BoxingClubExists(id))
-                    {
-                        return null;
-                    }
-                    else
-                    {
-                        return null;
-                    }
-                }
-            }
+        public async Task<IEnumerable<BoxingClubs>> GetAllBoxingClubs()
+        {
+            var boxingClubs = await _context.BoxingClubs.ToListAsync();
+            return boxingClubs;
+        }
 
 
 
-            public BoxingClubs DeleteBoxingClub(int id)
-            {
-                var boxingClub = _context.BoxingClubs.Find(id);
-                if (boxingClub == null) return null;
-                _context.BoxingClubs.Remove(boxingClub);
-                _context.SaveChanges();
+        public async Task<BoxingClubs> AddBoxingClub(BoxingClubs inputModel)
+        {
 
-                return boxingClub;
-            }
-
-
-            private bool BoxingClubExists(int id)
-            {
-                return _context.BoxingClubs.Any(e => e.BoxingClubId == id);
-            }
+            var boxingClub = _context.Add(inputModel).Entity;
+            await _context.SaveChangesAsync();
+            return boxingClub;
 
         }
+
+
+
+        public async Task<BoxingClubs> UpdateBoxingClub(int id, BoxingClubs editModel)
+        {
+            try
+            {
+                var boxingClub = editModel;
+                boxingClub.BoxingClubId = id;
+
+                _context.Update(boxingClub);
+                await _context.SaveChangesAsync();
+
+                return boxingClub;
+            }
+            catch (DbUpdateException)
+            {
+                if (!await BoxingClubExists(id))
+                {
+                    return null;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+
+        public async Task<BoxingClubs> DeleteBoxingClub(int id)
+        {
+            var boxingClub = await _context.BoxingClubs.FindAsync(id);
+            if (boxingClub == null) return null;
+            _context.BoxingClubs.Remove(boxingClub);
+            await _context.SaveChangesAsync();
+
+            return boxingClub;
+        }
+
+
+        private async Task<bool> BoxingClubExists(int id)
+        {
+            return await _context.BoxingClubs.AnyAsync(e => e.BoxingClubId == id);
+        }
+
     }
+}
 
 

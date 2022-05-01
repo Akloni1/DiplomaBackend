@@ -19,13 +19,13 @@ namespace Diploma.Repository.CoachesRepository
             _context = context;
         }
 
-        public Coaches AddCoach(Coaches coachModel)
+        public async Task<Coaches> AddCoach(Coaches coachModel)
         {
-            if (!LoginExists(coachModel.Login))
+            if (!await LoginExists(coachModel.Login))
             {
                 coachModel.Password = _pwdHash.sha256encrypt(coachModel.Password, coachModel.Login);
                 var coach = _context.Add(coachModel).Entity;
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return coach;
             }
             else
@@ -34,12 +34,12 @@ namespace Diploma.Repository.CoachesRepository
             }
         }
 
-        public Coaches DeleteCoach(int id)
+        public async Task<Coaches> DeleteCoach(int id)
         {
-            var coach = _context.Coaches.Find(id);
+            var coach = await _context.Coaches.FindAsync(id);
             if (coach == null) return null;
             _context.Coaches.Remove(coach);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return coach;
         }
@@ -50,18 +50,18 @@ namespace Diploma.Repository.CoachesRepository
             return coach;
         }
 
-        public Coaches GetCoach(int id)
+        public async Task<Coaches> GetCoach(int id)
         {
-            var coach = _context.Coaches.FirstOrDefault(m => m.CoachId == id);
+            var coach = await _context.Coaches.FirstOrDefaultAsync(m => m.CoachId == id);
             return coach;
         }
 
-        public Coaches UpdateCoach(int id, Coaches coachModel)
+        public async Task<Coaches> UpdateCoach(int id, Coaches coachModel)
         {
             try
             {
 
-                var coachNotEdit = _context.Coaches.FirstOrDefault(m => m.CoachId == id);
+                var coachNotEdit = await _context.Coaches.FirstOrDefaultAsync(m => m.CoachId == id);
                 _context.Entry(coachNotEdit).State = EntityState.Detached;
                 Coaches coach = coachModel;
                 coach.CoachId = id;
@@ -69,13 +69,13 @@ namespace Diploma.Repository.CoachesRepository
                 coach.Password = coachNotEdit.Password;
 
                 _context.Update(coach);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
                 return coach;
             }
             catch (DbUpdateException)
             {
-                if (!CoachExists(id))
+                if (!await CoachExists(id))
                 {
                     return null;
                 }
@@ -85,16 +85,16 @@ namespace Diploma.Repository.CoachesRepository
                 }
             }
         }
-        private bool CoachExists(int id)
+        private async Task<bool> CoachExists(int id)
         {
-            return _context.Coaches.Any(e => e.CoachId == id);
+            return await _context.Coaches.AnyAsync(e => e.CoachId == id);
         }
-        private bool LoginExists(string login)
+        private async Task<bool> LoginExists(string login)
         {
-            var boxer = _context.Boxers.Any(e => e.Login == login);
-            var coach = _context.Coaches.Any(e => e.Login == login);
-            var admin = _context.Admins.Any(e => e.Login == login);
-            var lead = _context.Leads.Any(e => e.Login == login);
+            var boxer = await _context.Boxers.AnyAsync(e => e.Login == login);
+            var coach = await _context.Coaches.AnyAsync(e => e.Login == login);
+            var admin = await _context.Admins.AnyAsync(e => e.Login == login);
+            var lead = await _context.Leads.AnyAsync(e => e.Login == login);
             if (boxer)
             {
                 return boxer;

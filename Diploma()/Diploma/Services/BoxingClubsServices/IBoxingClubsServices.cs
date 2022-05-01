@@ -1,14 +1,15 @@
 ﻿using Diploma.ViewModels.BoxingClubs;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Diploma.Services.BoxingClubsServices
 {
     public interface IBoxingClubsServices
     {
-        BoxingClubsViewModel GetBoxingClub(int id);
-        IEnumerable<BoxingClubsViewModel> GetAllBoxingClubs();
-        EditBoxingClubsViewModel UpdateBoxingClub(int id, EditBoxingClubsViewModel boxingClubModel);
-        InputBoxingClubsViewModel AddBoxingClub(InputBoxingClubsViewModel boxingClubModel);
-        DeleteBoxingClubsViewModel DeleteBoxingClub(int id);
+        Task<BoxingClubsViewModel> GetBoxingClub(int id);
+        Task<IEnumerable<BoxingClubsViewModel>> GetAllBoxingClubs();
+        Task<EditBoxingClubsViewModel> UpdateBoxingClub(int id, EditBoxingClubsViewModel boxingClubModel);
+        Task<InputBoxingClubsViewModel> AddBoxingClub(InputBoxingClubsViewModel boxingClubModel);
+        Task<DeleteBoxingClubsViewModel> DeleteBoxingClub(int id);
     }
 }

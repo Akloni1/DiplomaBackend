@@ -1,6 +1,7 @@
 ﻿using Diploma.Cryptography;
 using Diploma.ViewModels.Boxers;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,9 +19,9 @@ namespace Diploma.Repository
             _pwdHash = new PwdHash();
             _context = context;
         }
-        public Boxers GetBoxer(int id)
+        public async Task<Boxers> GetBoxer(int id)
         {
-            var boxer = _context.Boxers.FirstOrDefault(m => m.BoxerId == id);
+            var boxer = await _context.Boxers.FirstOrDefaultAsync(m => m.BoxerId == id);
             return boxer;
         }
 
@@ -32,12 +33,12 @@ namespace Diploma.Repository
 
 
 
-        public Boxers AddBoxer(Boxers inputModel)
+        public async Task<Boxers> AddBoxer(Boxers inputModel)
         {
             if (!LoginExists(inputModel.Login)) {
                 inputModel.Password = _pwdHash.sha256encrypt(inputModel.Password, inputModel.Login);
                 var boxer = _context.Add(inputModel).Entity;
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return boxer;
             }
             else
@@ -49,28 +50,28 @@ namespace Diploma.Repository
 
 
 
-        public Boxers UpdateBoxer(int id, Boxers editModel)
+        public async Task<Boxers> UpdateBoxer(int id, Boxers editModel)
         {
             try
             {
                
-                var boxerNotEdit = _context.Boxers.FirstOrDefault(m => m.BoxerId == id);
+                var boxerNotEdit = await _context.Boxers.FirstOrDefaultAsync(m => m.BoxerId == id);
                 _context.Entry(boxerNotEdit).State = EntityState.Detached;
                 Boxers boxer = editModel;
                 boxer.BoxerId = id;
                 boxer.Login = boxerNotEdit.Login;
                 boxer.Password = boxerNotEdit.Password;
-               
+
 
 
                 _context.Update(boxer);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
                 return boxer;
             }
             catch (DbUpdateException)
             {
-                if (!BoxerExists(id))
+                if (!await BoxerExists(id))
                 {
                     return null;
                 }
@@ -83,20 +84,20 @@ namespace Diploma.Repository
 
 
 
-        public Boxers DeleteBoxer(int id)
+        public async Task<Boxers> DeleteBoxer(int id)
         {
-            var boxer = _context.Boxers.Find(id);
+            var boxer = await _context.Boxers.FindAsync(id);
             if (boxer == null) return null;
             _context.Boxers.Remove(boxer);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return boxer;
         }
 
 
-        private bool BoxerExists(int id)
+        private async Task<bool> BoxerExists(int id)
         {
-            return _context.Boxers.Any(e => e.BoxerId == id);
+            return await _context.Boxers.AnyAsync(e => e.BoxerId == id);
         }
 
         private bool LoginExists(string login)

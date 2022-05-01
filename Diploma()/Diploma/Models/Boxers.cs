@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System;
 using System.Collections.Generic;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
@@ -33,5 +34,10 @@ namespace Diploma
         public virtual BoxingClubs BoxingClub { get; set; }
         public virtual Coaches Coach { get; set; }
         public virtual ICollection<CompetitionsBoxers> CompetitionsBoxers { get; set; }
+
+        public static implicit operator Boxers(EntityEntry<Boxers> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

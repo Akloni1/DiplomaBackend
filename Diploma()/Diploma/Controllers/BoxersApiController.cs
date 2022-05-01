@@ -39,19 +39,19 @@ namespace Diploma.Controllers
         [HttpGet("{id}")] // GET: /api/boxers/5
         [ProducesResponseType(200, Type = typeof(BoxerViewModel))]
         [ProducesResponseType(404)]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var boxer = _boxersServices.GetBoxer(id);
+            var boxer = await _boxersServices.GetBoxer(id);
             if (boxer == null) return NotFound();
             return Ok(boxer);
         }
 
         [Authorize(Roles = "admin,coach,lead")]
         [HttpPost] // POST: api/boxers
-        public ActionResult<BoxerViewModel> PostBoxer(InputBoxerViewModel inputModel)
+        public async Task<ActionResult<BoxerViewModel>> PostBoxer(InputBoxerViewModel inputModel)
         {
 
-            var boxer = _boxersServices.AddBoxer(inputModel);
+            var boxer = await _boxersServices.AddBoxer(inputModel);
             //  return CreatedAtAction("GetById", new { id = boxer.BoxerId }, _mapper.Map<InputBoxerViewModel>(inputModel));
             if (boxer != null)
             {
@@ -63,20 +63,20 @@ namespace Diploma.Controllers
 
         [Authorize(Roles = "admin,coach,lead")]
         [HttpPut("{id}")] // PUT: api/boxers/5
-        public IActionResult UpdateBoxer(int id, EditBoxerViewModel editModel)
+        public async Task<IActionResult> UpdateBoxer(int id, EditBoxerViewModel editModel)
         {
 
-            var boxer = _boxersServices.UpdateBoxer(id, editModel);
+            var boxer = await _boxersServices.UpdateBoxer(id, editModel);
             if (boxer == null) return BadRequest();
             return Ok(boxer);
         }
 
         [Authorize(Roles = "admin,coach,lead")]
         [HttpDelete("{id}")] // DELETE: api/boxers/5
-        public ActionResult<DeleteBoxerViewModel> DeleteBoxer(int id)
+        public async Task<ActionResult<DeleteBoxerViewModel>> DeleteBoxer(int id)
         {
 
-            var boxer = _boxersServices.DeleteBoxer(id);
+            var boxer = await _boxersServices.DeleteBoxer(id);
             if (boxer == null) return NotFound();
             return Ok(boxer);
         }

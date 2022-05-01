@@ -6,10 +6,10 @@ namespace Diploma.Repository.CoachesRepository
     public interface ICoachesRepository
     {
 
-        Coaches GetCoach(int id);
+        Task<Coaches> GetCoach(int id);
         Task<ICollection<Coaches>> GetAllCoaches();
-        Coaches UpdateCoach(int id, Coaches coachModel);
-        Coaches AddCoach(Coaches coachModel);
-        Coaches DeleteCoach(int id);
+        Task<Coaches> UpdateCoach(int id, Coaches coachModel);
+        Task<Coaches> AddCoach(Coaches coachModel);
+        Task<Coaches> DeleteCoach(int id);
     }
 }

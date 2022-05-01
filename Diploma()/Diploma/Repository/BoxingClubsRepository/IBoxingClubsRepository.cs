@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Diploma.Repository.BoxingClubsRepository
 {
     public interface IBoxingClubsRepository
     {
-        BoxingClubs GetBoxingClub(int id);
-        IEnumerable<BoxingClubs> GetAllBoxingClubs();
-        BoxingClubs UpdateBoxingClub(int id, BoxingClubs boxerModel);
-        BoxingClubs AddBoxingClub(BoxingClubs boxerModel);
-        BoxingClubs DeleteBoxingClub(int id);
+        Task<BoxingClubs> GetBoxingClub(int id);
+        Task<IEnumerable<BoxingClubs>> GetAllBoxingClubs();
+        Task<BoxingClubs> UpdateBoxingClub(int id, BoxingClubs boxerModel);
+        Task<BoxingClubs> AddBoxingClub(BoxingClubs boxerModel);
+        Task<BoxingClubs> DeleteBoxingClub(int id);
     }
 }

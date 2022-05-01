@@ -18,15 +18,15 @@ namespace Diploma.Services.CoachesServices
             _coachesRepository = coachesRepository;
         }
 
-        public CoachViewModel AddCoach(InputCoachViewModel coachModel)
+        public async Task<CoachViewModel> AddCoach(InputCoachViewModel coachModel)
         {
-            var coach = _coachesRepository.AddCoach(_mapper.Map<Coaches>(coachModel));
+            var coach = await _coachesRepository.AddCoach(_mapper.Map<Coaches>(coachModel));
             return _mapper.Map<CoachViewModel>(coach);
         }
 
-        public DeleteCoachViewModel DeleteCoach(int id)
+        public async Task<DeleteCoachViewModel> DeleteCoach(int id)
         {
-            var coach = _coachesRepository.DeleteCoach(id);
+            var coach = await _coachesRepository.DeleteCoach(id);
             if (coach == null) return null;
             return _mapper.Map<DeleteCoachViewModel>(coach);
         }
@@ -37,16 +37,16 @@ namespace Diploma.Services.CoachesServices
             return coaches;
         }
 
-        public CoachViewModel GetCoach(int id)
+        public async Task<CoachViewModel> GetCoach(int id)
         {
-            var coach = _mapper.Map<CoachViewModel>(_coachesRepository.GetCoach(id));
+            var coach = _mapper.Map<CoachViewModel>(await _coachesRepository.GetCoach(id));
 
             return coach;
         }
 
-        public EditCoachViewModel UpdateCoaches(int id, EditCoachViewModel coachModel)
+        public async Task<EditCoachViewModel> UpdateCoaches(int id, EditCoachViewModel coachModel)
         {
-            var coach = _coachesRepository.UpdateCoach(id, _mapper.Map<Coaches>(coachModel));
+            var coach = await _coachesRepository.UpdateCoach(id, _mapper.Map<Coaches>(coachModel));
             if (coach == null)
             {
                 return null;
