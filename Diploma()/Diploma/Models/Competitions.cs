@@ -19,6 +19,7 @@ namespace Diploma
         public string CompetitionsName { get; set; }
         public string CompetitionsAddress { get; set; }
         public DateTime StartTime { get; set; }
+        public  bool IsStarted { get; set; }
 
         public virtual ICollection<CompetitionsBoxers> CompetitionsBoxers { get; set; }
         public virtual ICollection<CompetitionsClubs> CompetitionsClubs { get; set; }

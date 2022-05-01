@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Diploma.Services
 {
@@ -28,9 +29,9 @@ namespace Diploma.Services
         }
 
 
-        public IEnumerable<BoxerViewModel> GetAllBoxers()
+        public async Task<ICollection<BoxerViewModel>> GetAllBoxers()
         {
-            var boxers = _mapper.Map<IEnumerable<Boxers>, IEnumerable<BoxerViewModel>>(_boxersRepository.GetAllBoxers());
+            var boxers = _mapper.Map<ICollection<Boxers>, ICollection<BoxerViewModel>>(await _boxersRepository.GetAllBoxers());
             return boxers;
         }
 

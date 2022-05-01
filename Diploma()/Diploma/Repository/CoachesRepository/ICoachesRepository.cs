@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Diploma.Repository.CoachesRepository
 {
@@ -6,7 +7,7 @@ namespace Diploma.Repository.CoachesRepository
     {
 
         Coaches GetCoach(int id);
-        IEnumerable<Coaches> GetAllCoaches();
+        Task<ICollection<Coaches>> GetAllCoaches();
         Coaches UpdateCoach(int id, Coaches coachModel);
         Coaches AddCoach(Coaches coachModel);
         Coaches DeleteCoach(int id);

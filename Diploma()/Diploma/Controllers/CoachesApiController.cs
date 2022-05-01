@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using AutoMapper;
 using Diploma.Services.CoachesServices;
 using Diploma.ViewModels.BoxingClubs;
@@ -7,6 +10,7 @@ using Diploma.ViewModels.Coaches;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Diploma.Controllers
 {
@@ -16,19 +20,27 @@ namespace Diploma.Controllers
     {
 
         private readonly ICoachesServices _coachesServices;
+        private readonly ILogger _logger;
 
-        public CoachesApiController(ICoachesServices coachesServices)
+        public CoachesApiController(ICoachesServices coachesServices, ILogger<CoachesApiController> logger)
         {
             _coachesServices = coachesServices;
+            _logger = logger;
         }
 
         [Authorize]
-        [HttpGet] // GET: /api/boxers
+        [HttpGet] // GET: 
         [ProducesResponseType(200, Type = typeof(IEnumerable<CoachViewModel>))]  
         [ProducesResponseType(404)]
-        public ActionResult<IEnumerable<CoachViewModel>> GetCoaches()
+        public async Task<ActionResult<ICollection<CoachViewModel>>> GetCoaches()
         {
-            var coaches = _coachesServices.GetAllCoaches();
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            var coaches = await _coachesServices.GetAllCoaches();
+            
+            stopwatch.Stop();
+            Console.WriteLine(stopwatch.ElapsedMilliseconds);
             return Ok(coaches);
         }
 
@@ -49,7 +61,14 @@ namespace Diploma.Controllers
         public ActionResult<InputCoachViewModel> PostCoaches(InputCoachViewModel inputModel)
         {
             var coach = _coachesServices.AddCoach(inputModel);
-            return Ok(coach);
+            if (coach != null)
+            {
+                return Ok(coach);
+            }
+            else
+            {
+                return BadRequest();
+            }
         }
 
         [Authorize(Roles = "admin,lead")]

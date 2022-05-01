@@ -3,6 +3,7 @@ using Diploma.ViewModels.Boxers;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Diploma.Repository
 {
@@ -23,9 +24,9 @@ namespace Diploma.Repository
             return boxer;
         }
 
-        public IEnumerable<Boxers> GetAllBoxers()
+        public async Task<ICollection<Boxers>> GetAllBoxers()
         {
-            var boxers = _context.Boxers.ToList();
+            var boxers = await _context.Boxers.ToListAsync();
             return boxers;
         }
 
@@ -33,7 +34,7 @@ namespace Diploma.Repository
 
         public Boxers AddBoxer(Boxers inputModel)
         {
-            if (!BoxerExists(inputModel.Login)) {
+            if (!LoginExists(inputModel.Login)) {
                 inputModel.Password = _pwdHash.sha256encrypt(inputModel.Password, inputModel.Login);
                 var boxer = _context.Add(inputModel).Entity;
                 _context.SaveChanges();
@@ -98,9 +99,33 @@ namespace Diploma.Repository
             return _context.Boxers.Any(e => e.BoxerId == id);
         }
 
-        private bool BoxerExists(string login)
+        private bool LoginExists(string login)
         {
-            return _context.Boxers.Any(e => e.Login == login);
+            var boxer = _context.Boxers.Any(e => e.Login == login);
+            var coach = _context.Coaches.Any(e => e.Login == login);
+            var admin = _context.Admins.Any(e => e.Login == login);
+            var lead = _context.Leads.Any(e => e.Login == login);
+            if (boxer)
+            {
+                return boxer;
+            }
+            else if (coach )
+            {
+                return coach;
+            }
+            else if (admin )
+            {
+                return admin;
+            }
+            else if (lead )
+            {
+                return lead;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
     }

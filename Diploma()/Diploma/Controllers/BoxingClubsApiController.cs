@@ -47,7 +47,7 @@ namespace Diploma.Controllers
             return Ok(boxingClubs);
         }
 
-        [Authorize(Roles = "admin,lead")]
+        [Authorize(Roles = "lead")]
         [HttpPost] // POST: api/boxers
         public ActionResult<InputBoxingClubsViewModel> PostBoxingClubs(InputBoxingClubsViewModel inputModel)
         {
@@ -55,7 +55,7 @@ namespace Diploma.Controllers
             return Ok(boxingClub);
         }
 
-        [Authorize(Roles = "admin,lead")]
+        [Authorize(Roles = "lead")]
         [HttpPut("{id}")] // PUT: api/boxers/5
         public IActionResult UpdateBoxingClub(int id, EditBoxingClubsViewModel editModel)
         {
@@ -64,7 +64,7 @@ namespace Diploma.Controllers
             return Ok(boxingClub);
         }
 
-        [Authorize(Roles = "admin,lead")]
+        [Authorize(Roles = "lead")]
         [HttpDelete("{id}")] // DELETE: api/boxingClubs/5
         public ActionResult<DeleteBoxingClubsViewModel> DeleteBoxingClubs(int id)
         {

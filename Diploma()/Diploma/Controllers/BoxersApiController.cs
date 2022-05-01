@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using AutoMapper;
 using Diploma;
 using Diploma.Services;
@@ -26,9 +28,9 @@ namespace Diploma.Controllers
         [HttpGet] // GET: /api/boxers
         [ProducesResponseType(200, Type = typeof(IEnumerable<BoxerViewModel>))]
         [ProducesResponseType(404)]
-        public ActionResult<IEnumerable<BoxerViewModel>> GetBoxers()
+        public async Task<ActionResult<ICollection<BoxerViewModel>>> GetBoxers()
         {
-            var boxers = _boxersServices.GetAllBoxers();
+            var boxers = await _boxersServices.GetAllBoxers();
             return Ok(boxers);
         }
 

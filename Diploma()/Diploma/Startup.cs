@@ -20,6 +20,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Diploma
@@ -90,8 +91,11 @@ namespace Diploma
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
         {
+
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -99,7 +103,9 @@ namespace Diploma
 
                 app.Use(async (context, next) =>
                 {
+                   
                     await next();
+
 
                     if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) // 401
                     {
@@ -122,6 +128,8 @@ namespace Diploma
                         }.ToString());
                     }
                 });
+
+
 
             }
 
@@ -166,20 +174,7 @@ namespace Diploma
 
             
 
-            /*     app.UseStatusCodePages(async statusCodeContext =>
-                 {
-                     switch (statusCodeContext.HttpContext.Response.StatusCode)
-                     {
-                         case 401:
-                             statusCodeContext.HttpContext.Response.StatusCode = 400;
-                             await statusCodeContext.HttpContext.Response.WriteAsJsonAsync(new { httpStatus = 500, Message = "some message" });
-                             break;
-                         case 403:
-                             statusCodeContext.HttpContext.Response.StatusCode = 400;
-                             await statusCodeContext.HttpContext.Response.WriteAsJsonAsync(new  { httpStatus = 500, Message = "some message" });
-                             break;
-                     }
-                 });*/
+   
 
 
         }

@@ -2,6 +2,7 @@
 using Diploma.Repository.CoachesRepository;
 using Diploma.ViewModels.Coaches;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Diploma.Services.CoachesServices
 {
@@ -30,9 +31,9 @@ namespace Diploma.Services.CoachesServices
             return _mapper.Map<DeleteCoachViewModel>(coach);
         }
 
-        public IEnumerable<CoachViewModel> GetAllCoaches()
+        public async Task<ICollection<CoachViewModel>> GetAllCoaches()
         {
-            var coaches = _mapper.Map<IEnumerable<Coaches>, IEnumerable<CoachViewModel>>(_coachesRepository.GetAllCoaches());
+            var coaches = _mapper.Map<ICollection<Coaches>, ICollection<CoachViewModel>>(await _coachesRepository.GetAllCoaches());
             return coaches;
         }
 

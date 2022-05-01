@@ -67,6 +67,7 @@ namespace Diploma.Controllers
           public ActionResult<InputCompetitionsViewModel> PostCompetition(InputCompetitionsViewModel inputModel)
           {
 
+              inputModel.IsStarted = false;
               var competition = _context.Add(_mapper.Map<Competitions>(inputModel)).Entity;
               _context.SaveChanges();
 
@@ -83,6 +84,7 @@ namespace Diploma.Controllers
               {
                   var competition = _mapper.Map<Competitions>(editModel);
                   competition.CompetitionsId = id;
+               //   competition.IsStarted = 
 
                   _context.Update(competition);
                   _context.SaveChanges();

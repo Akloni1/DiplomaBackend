@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Diploma.Repository.CoachesRepository
 {
@@ -20,10 +21,17 @@ namespace Diploma.Repository.CoachesRepository
 
         public Coaches AddCoach(Coaches coachModel)
         {
-            coachModel.Password = _pwdHash.sha256encrypt(coachModel.Password, coachModel.Login);
-            var coach = _context.Add(coachModel).Entity;
-            _context.SaveChanges();
-            return coach;
+            if (!LoginExists(coachModel.Login))
+            {
+                coachModel.Password = _pwdHash.sha256encrypt(coachModel.Password, coachModel.Login);
+                var coach = _context.Add(coachModel).Entity;
+                _context.SaveChanges();
+                return coach;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public Coaches DeleteCoach(int id)
@@ -36,9 +44,9 @@ namespace Diploma.Repository.CoachesRepository
             return coach;
         }
 
-        public IEnumerable<Coaches> GetAllCoaches()
+        public async Task<ICollection<Coaches>> GetAllCoaches()
         {
-            var coach = _context.Coaches.ToList();
+            var coach = await _context.Coaches.AsNoTracking().ToListAsync();
             return coach;
         }
 
@@ -80,6 +88,34 @@ namespace Diploma.Repository.CoachesRepository
         private bool CoachExists(int id)
         {
             return _context.Coaches.Any(e => e.CoachId == id);
+        }
+        private bool LoginExists(string login)
+        {
+            var boxer = _context.Boxers.Any(e => e.Login == login);
+            var coach = _context.Coaches.Any(e => e.Login == login);
+            var admin = _context.Admins.Any(e => e.Login == login);
+            var lead = _context.Leads.Any(e => e.Login == login);
+            if (boxer)
+            {
+                return boxer;
+            }
+            else if (coach)
+            {
+                return coach;
+            }
+            else if (admin)
+            {
+                return admin;
+            }
+            else if (lead)
+            {
+                return lead;
+            }
+            else
+            {
+                return false;
+            }
+
         }
     }
 }
