@@ -56,7 +56,7 @@ namespace Diploma.Controllers
             return Ok(boxingClub);
         }
 
-        [Authorize(Roles = "lead")]
+        [Authorize(Roles = "admin,lead")]
         [HttpPut("{id}")] // PUT: api/boxers/5
         public async Task<IActionResult> UpdateBoxingClub(int id, EditBoxingClubsViewModel editModel)
         {

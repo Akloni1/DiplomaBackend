@@ -63,10 +63,10 @@ namespace Diploma.Controllers
             if (final.notPaired.Count > 1)
             {
                 var final2 = _boxersComparisonServices.BoxersComparison(final.notPaired, 20d, 20d, 50d, 20d, 50d);
-                BoxersViewModel couple = new BoxersViewModel();
+               // BoxersViewModel couple = new BoxersViewModel();
                 foreach (var item in final2.res)
                 {
-
+                    BoxersViewModel couple = new BoxersViewModel();
                     couple.boxer1 = item.boxer1;
                     couple.boxer2 = item.boxer2;
                     final.res.Add(couple);

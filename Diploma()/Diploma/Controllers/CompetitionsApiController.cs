@@ -78,7 +78,7 @@ namespace Diploma.Controllers
         [Authorize(Roles = "admin,lead")]
 
         [HttpPut("{id}")] // PUT: api/Competitions/5
-        public async Task<IActionResult> UpdateBoxer(int id, EditCompetitionsViewModel editModel)
+        public async Task<IActionResult> UpdateCompetition(int id, EditCompetitionsViewModel editModel)
         {
             try
             {

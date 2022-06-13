@@ -67,7 +67,7 @@ namespace Diploma.Controllers
 
         [Authorize(Roles = "admin,coach,boxer,lead")]
         [HttpPost] // POST: /api/competitions/boxer
-        public async Task<ActionResult<InputCompetitionsBoxersViewModel>> PostCompetition(InputCompetitionsBoxersViewModel inputModel)
+        public async Task<ActionResult<InputCompetitionsBoxersViewModel>> PostCompetitionBoxer(InputCompetitionsBoxersViewModel inputModel)
         {
 
             var competitionBoxer = _context.Add(_mapper.Map<CompetitionsBoxers>(inputModel)).Entity;

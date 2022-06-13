@@ -69,7 +69,7 @@ namespace Diploma.Controllers
 
         [Authorize(Roles = "admin,lead")]
         [HttpPost] // POST: /api/competitions/clubs / добавление клуба в соревнования
-        public async Task<ActionResult<InputCompetitionsClubsViewModel>> PostClub(InputCompetitionsClubsViewModel inputModel)
+        public async Task<ActionResult<InputCompetitionsClubsViewModel>> PostCompetitionClub(InputCompetitionsClubsViewModel inputModel)
         {
 
             var competitionClub = _context.Add(_mapper.Map<CompetitionsClubs>(inputModel)).Entity;
